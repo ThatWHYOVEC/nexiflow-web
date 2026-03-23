@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html class="no-js" lang="cs">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Nexiflow – AI chatbot pro váš web. Automatizujte zákaznickou podporu, zachytávejte leady a nikdy nenechte zákazníka bez odpovědi. Vyzkoušejte 14 dní zdarma.">
+    <meta name="author" content="Nexiflow">
+    <link rel="icon" href="assets/img/favicon.png">
+    <title>Nexiflow – AI chatbot pro váš web</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/odometer.css">
+    <link rel="stylesheet" href="assets/css/slick.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+      /* ── Pricing 4-column fix ── */
+      #cenik .col-xl-3 {
+        display: flex;
+        flex-direction: column;
+      }
+      #cenik .cs_pricing_table.cs_style_2 {
+        padding: 32px 24px 36px;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+      }
+      #cenik .cs_pricing_table.cs_style_2 .cs_pricing_table_heading {
+        flex-direction: column;
+        gap: 6px;
+        align-items: flex-start;
+      }
+      #cenik .cs_pricing_table.cs_style_2 .cs_price {
+        font-size: 40px !important;
+        line-height: 1.2em;
+      }
+      #cenik .cs_pricing_table.cs_style_2 .cs_price small {
+        font-size: 15px !important;
+      }
+      #cenik .cs_pricing_table.cs_style_2 .cs_pricing_badge {
+        top: 32px;
+        left: auto;
+        right: 0;
+        transform: none;
+        border-radius: 4px 0 0 4px;
+        padding: 5px 16px 5px 28px;
+      }
+      #cenik .cs_pricing_table.cs_style_2 .cs_pricing_badge::before {
+        border-left-color: var(--accent-color);
+      }
+      #cenik .cs_pricing_feature_list {
+        max-width: 100% !important;
+        flex: 1;
+        margin-bottom: 24px;
+      }
+      #cenik .cs_pricing_table.cs_style_2 .cs_btn.cs_style_1 {
+        margin-top: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Start Preloader -->
+    <div class="cs_preloader cs_white_bg">
+      <div class="cs_preloader_in position-relative">
+        <span></span>
+      </div>
+    </div>
+    <!-- End Preloader -->
+
+    <!-- Start Header Section -->
+    <header class="cs_site_header cs_style_1 cs_type_1 cs_sticky_header cs_heading_color cs_heading_font position-relative">
+      <div class="cs_main_header position-relative z-1">
+        <div class="container">
+          <div class="cs_main_header_in position-relative">
+            <div class="cs_header_shape position-absolute">
+              <img src="assets/img/header-shape-2.svg" alt="Header shape">
+            </div>
+            <div class="cs_main_header_left position-relative z-1">
+              <a class="cs_site_branding" href="index.html" aria-label="Nexiflow – úvodní stránka">
+                <img src="assets/img/nexiflow-logo.svg" alt="Nexiflow logo">
+              </a>
+            </div>
+            <div class="cs_main_header_center">
+              <div class="cs_nav">
+                <ul class="cs_nav_list">
+                  <li><a href="#funkce" aria-label="Funkce">Funkce</a></li>
+                  <li><a href="#jak-to-funguje" aria-label="Jak to funguje">Jak to funguje</a></li>
+                  <li><a href="#cenik" aria-label="Ceník">Ceník</a></li>
+                  <li><a href="#integrace" aria-label="Integrace">Integrace</a></li>
+                  <li><a href="#kontakt" aria-label="Kontakt">Kontakt</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="cs_main_header_right">
+              <a href="https://dashboard.webui.cz" aria-label="Začít zdarma" class="cs_btn cs_style_1 cs_bg_1 cs_fs_14 cs_bold cs_white_color text-uppercase">
+                <span>Začít zdarma</span>
+                <span class="cs_btn_icon"><i class="fa-solid fa-arrow-right"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- End Header Section -->
+
+    <!-- Start Hero Section -->
+    <section class="cs_hero cs_style_2 cs_bg_filed position-relative" data-src="assets/img/hero-bg-2.jpg">
+      <div class="container">
+        <div class="cs_hero_text text-center position-relative">
+          <p class="cs_hero_subtitle cs_heading_color cs_heading_font cs_mb_18 text-center">
+            <span class="cs_theme_color_4">
+              <img src="assets/img/icons/star-1.svg" alt="Star icon">
+            </span>
+            <span>Vítejte v Nexiflow</span>
+            <span class="cs_theme_color_4">
+              <img src="assets/img/icons/star-1.svg" alt="Star icon">
+            </span>
+          </p>
+          <h1 class="cs_hero_title cs_fs_64 cs_mb_20 wow fadeInDown">AI chatbot pro váš web –<br>bez jediného řádku kódu</h1>
+          <p class="cs_hero_desc cs_mb_26">Přidejte inteligentního chatbota na váš web za pár minut. Automatizujte zákaznickou<br>podporu, zachytávejte leady a nikdy nenechte zákazníka bez odpovědi.</p>
+          <div class="cs_btns_group">
+            <a href="https://dashboard.webui.cz" aria-label="Začít zdarma" class="cs_btn cs_style_1 cs_bg_1 cs_fs_14 cs_bold cs_white_color text-uppercase">
+              <span>Začít zdarma</span>
+              <span class="cs_btn_icon"><i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+            <a href="#jak-to-funguje" aria-label="Zjistit více" class="cs_btn cs_style_1 cs_outline cs_ cs_fs_14 cs_bold cs_heading_color text-uppercase">
+              <span>Zjistit více</span>
+              <span class="cs_btn_icon"><i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+          </div>
+          <div class="cs_hero_shape_1 position-absolute">
+            <img src="assets/img/hero-shape-1.svg" alt="Shape">
+          </div>
+        </div>
+        <div class="cs_hero_shape_2 position-absolute">
+          <img src="assets/img/hero-shape-2.svg" alt="Shape">
+        </div>
+      </div>
+    </section>
+    <!-- End Hero Section -->
+
+    <!-- Start Banner Section -->
+    <div class="cs_banner cs_style_1 position-relative">
+      <div class="container">
+        <div class="cs_banner_thumbnail_wrapper">
+          <div class="cs_banner_thumbnail">
+            <img src="assets/img/banner-img-1.png" alt="Nexiflow dashboard ukázka">
+          </div>
+          <div class="cs_banner_thumbnail">
+            <img src="assets/img/phone-img-1.png" alt="Nexiflow chatbot na mobilu">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Banner Section -->
+
+    <!-- Start Brands Section -->
+    <section>
+      <div class="cs_height_120 cs_height_lg_80"></div>
+      <div class="container">
+        <div class="cs_mb_31">
+          <h2 class="cs_fs_20 cs_normal mb-0">Funguje na platformách, které znáte a používáte</h2>
+        </div>
+        <div class="cs_horizontal_slider_wrapper">
+          <div class="cs_slider_in">
+            <div class="cs_brands_list">
+              <div class="cs_center">
+                <img src="assets/img/brand-wp.svg" alt="WordPress">
+              </div>
+              <div class="cs_center">
+                <img src="assets/img/brand-woo.svg" alt="WooCommerce">
+              </div>
+              <div class="cs_center">
+                <img src="assets/img/brand-shopify.svg" alt="Shopify">
+              </div>
+              <div class="cs_center">
+                <img src="assets/img/brand-html.svg" alt="HTML5">
+              </div>
+              <div class="cs_center">
+                <img src="assets/img/brand-webflow.svg" alt="Webflow">
+              </div>
+            </div>
+            <div class="cs_brands_list">
+              <div class="cs_center">
+                <img src="assets/img/brand-wp.svg" alt="WordPress">
+              </div>
+              <div class="cs_center">
+                <img src="assets/img/brand-woo.svg" alt="WooCommerce">
+              </div>
+              <div class="cs_center">
+                <img src="assets/img/brand-shopify.svg" alt="Shopify">
+              </div>
+              <div class="cs_center">
+                <img src="assets/img/brand-html.svg" alt="HTML5">
+              </div>
+              <div class="cs_center">
+                <img src="assets/img/brand-webflow.svg" alt="Webflow">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Brands Section -->
+
+    <!-- Start Features Section -->
+    <section class="position-relative" id="funkce">
+      <div class="cs_height_120 cs_height_lg_80"></div>
+      <div class="container">
+        <div class="cs_section_heading cs_style_1 cs_mb_47 cs_center_column text-center position-relative z-1">
+          <div class="cs_section_subtitle cs_fs_18 cs_heading_color cs_mb_22">
+            <img src="assets/img/icons/star-1.svg" alt="Star icon">
+            <span>Klíčové funkce</span>
+            <img src="assets/img/icons/star-1.svg" alt="Star icon">
+          </div>
+          <h2 class="cs_section_title cs_fs_48 cs_semibold mb-0 wow fadeInUp">Výkonné nástroje pro váš<br>zákaznický servis</h2>
+        </div>
+        <div class="cs_features_items_wrapper position-relative z-1">
+          <div class="cs_feature_item cs_radius_20 cs_bg_filed" data-src="assets/img/feature-item-bg.svg">
+            <h3 class="cs_fs_36 cs_semibold cs_white_color cs_mb_40">Mějte každou konverzaci pod kontrolou – kdykoliv a odkudkoliv</h3>
+            <a href="https://dashboard.webui.cz" aria-label="Začít zdarma" class="cs_btn cs_style_1 cs_fs_14 cs_bold cs_white_color text-uppercase">
+              <span>Vyzkoušet zdarma</span>
+              <span class="cs_btn_icon"><i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+          </div>
+          <div class="cs_feature_item cs_white_bg cs_radius_20">
+            <span class="cs_feature_icon cs_center cs_radius_12 cs_mb_15">
+              <img src="assets/img/icons/code-icon.svg" alt="Live chat ikona">
+            </span>
+            <h3 class="cs_fs_24 cs_semibold cs_mb_6">
+              <a href="#funkce" aria-label="Live chat funkce">Live chat přebírání</a>
+            </h3>
+            <ul class="cs_features_list cs_mp_0">
+              <li>
+                <img src="assets/img/icons/caret-icon.svg" alt="Caret icon">
+                <span>Převezměte chat od bota v reálném čase</span>
+              </li>
+              <li>
+                <img src="assets/img/icons/caret-icon.svg" alt="Caret icon">
+                <span>Přiřazení konverzací operátorům</span>
+              </li>
+              <li>
+                <img src="assets/img/icons/caret-icon.svg" alt="Caret icon">
+                <span>Interní poznámky pro tým</span>
+              </li>
+              <li>
+                <img src="assets/img/icons/caret-icon.svg" alt="Caret icon">
+                <span>Rychlé odpovědi a šablony</span>
+              </li>
+            </ul>
+            <a href="#funkce" aria-label="Více o live chatu" class="cs_text_btn cs_fs_14 cs_bold text-uppercase">
+              <span>Zjistit více</span>
+              <span class="cs_btn_icon"><i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+          </div>
+          <div class="cs_feature_item cs_white_bg cs_radius_20">
+            <span class="cs_feature_icon cs_center cs_bg_1 cs_radius_12 cs_mb_15">
+              <img src="assets/img/icons/cloud-computing.svg" alt="AI ikona">
+            </span>
+            <h3 class="cs_fs_24 cs_semibold cs_mb_6">
+              <a href="#funkce" aria-label="AI chatbot funkce">AI chatbot na míru</a>
+            </h3>
+            <ul class="cs_features_list cs_mp_0">
+              <li>
+                <img src="assets/img/icons/caret-icon.svg" alt="Caret icon">
+                <span>Trénujte bota na vaše FAQ a produkty</span>
+              </li>
+              <li>
+                <img src="assets/img/icons/caret-icon.svg" alt="Caret icon">
+                <span>Vlastní osobnost a tón komunikace</span>
+              </li>
+              <li>
+                <img src="assets/img/icons/caret-icon.svg" alt="Caret icon">
+                <span>Zachytávání kontaktů a leadů</span>
+              </li>
+              <li>
+                <img src="assets/img/icons/caret-icon.svg" alt="Caret icon">
+                <span>Odpovídá 24/7 bez přestávky</span>
+              </li>
+            </ul>
+            <a href="#funkce" aria-label="Více o AI chatbotu" class="cs_text_btn cs_fs_14 cs_bold text-uppercase">
+              <span>Zjistit více</span>
+              <span class="cs_btn_icon"><i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+          </div>
+          <div class="cs_feature_item cs_white_bg cs_radius_20">
+            <span class="cs_feature_icon cs_bg_2 cs_center cs_radius_12 cs_mb_15">
+              <img src="assets/img/icons/quality-assurance.svg" alt="Analytika ikona">
+            </span>
+            <h3 class="cs_fs_24 cs_semibold cs_mb_6">
+              <a href="#funkce" aria-label="Analytika funkce">Přehledy a analytika</a>
+            </h3>
+            <ul class="cs_features_list cs_mp_0">
+              <li>
+                <img src="assets/img/icons/caret-icon.svg" alt="Caret icon">
+                <span>Statistiky konverzací a zpráv</span>
+              </li>
+              <li>
+                <img src="assets/img/icons/caret-icon.svg" alt="Caret icon">
+                <span>CSAT hodnocení zákaznické spokojenosti</span>
+              </li>
+              <li>
+                <img src="assets/img/icons/caret-icon.svg" alt="Caret icon">
+                <span>Konverzní funnel a heatmapa aktivit</span>
+              </li>
+              <li>
+                <img src="assets/img/icons/caret-icon.svg" alt="Caret icon">
+                <span>Export dat do CSV</span>
+              </li>
+            </ul>
+            <a href="#funkce" aria-label="Více o analytice" class="cs_text_btn cs_fs_14 cs_bold text-uppercase">
+              <span>Zjistit více</span>
+              <span class="cs_btn_icon"><i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+          </div>
+          <div class="cs_feature_item cs_white_bg cs_radius_20">
+            <span class="cs_feature_icon cs_bg_3 cs_center cs_radius_12 cs_mb_15">
+              <img src="assets/img/icons/security.svg" alt="Webhooky ikona">
+            </span>
+            <h3 class="cs_fs_24 cs_semibold cs_mb_6">
+              <a href="#funkce" aria-label="Integrace a webhooky">Integrace a webhooky</a>
+            </h3>
+            <ul class="cs_features_list cs_mp_0">
+              <li>
+                <img src="assets/img/icons/caret-icon.svg" alt="Caret icon">
+                <span>Notifikace na Slack a e-mail</span>
+              </li>
+              <li>
+                <img src="assets/img/icons/caret-icon.svg" alt="Caret icon">
+                <span>Outbound webhooky do vašeho CRM</span>
+              </li>
+              <li>
+                <img src="assets/img/icons/caret-icon.svg" alt="Caret icon">
+                <span>Embeddable JS widget – jeden řádek kódu</span>
+              </li>
+              <li>
+                <img src="assets/img/icons/caret-icon.svg" alt="Caret icon">
+                <span>API pro vlastní integraci</span>
+              </li>
+            </ul>
+            <a href="#integrace" aria-label="Více o integracích" class="cs_text_btn cs_fs_14 cs_bold text-uppercase">
+              <span>Zjistit více</span>
+              <span class="cs_btn_icon"><i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="cs_feature_shape_1 position-absolute">
+        <img src="assets/img/3d-shape.png" alt="Vector shape">
+      </div>
+      <div class="cs_feature_shape_2 position-absolute">
+        <img src="assets/img/spring-shape.png" alt="Spring shape">
+      </div>
+      <div class="cs_height_120 cs_height_lg_80"></div>
+    </section>
+    <!-- End Features Section -->
+
+    <!-- Start How It Work Section -->
+    <section class="cs_gray_bg_2 position-relative" id="jak-to-funguje">
+      <div class="cs_height_120 cs_height_lg_80"></div>
+      <div class="container">
+        <div class="row cs_gap_y_40 position-relative z-1">
+          <div class="col-lg-6 order-lg-2">
+            <div class="cs_workink_process_heading cs_center_column position-relative">
+              <div class="cs_section_heading cs_style_1 cs_mb_11 z-1">
+                <div class="cs_section_subtitle cs_fs_18 cs_heading_color cs_mb_22">
+                  <img src="assets/img/icons/star-1.svg" alt="Star icon">
+                  <span>Jak to funguje</span>
+                  <img src="assets/img/icons/star-1.svg" alt="Star icon">
+                </div>
+                <h2 class="cs_section_title cs_fs_48 cs_semibold wow fadeInUp">Spusťte chatbota na svém webu ve třech krocích.</h2>
+                <p class="cs_card_desc cs_mb_22">Žádné programování, žádná složitá nastavení. Od registrace po funkčního chatbota na vašem webu za méně než 10 minut.</p>
+              </div>
+              <div class="cs_process_thumbnail z-1">
+                <img src="assets/img/human-1.png" alt="Nexiflow nastavení">
+              </div>
+              <div class="cs_vector_shape position-absolute bottom-0 start-0">
+                <img src="assets/img/vector-7.svg" alt="Vector shape">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="cs_iconbox_wrapper_2">
+              <div class="cs_iconbox cs_style_2">
+                <span class="cs_iconbox_icon cs_center cs_accent_bg cs_mb_18">
+                  <img src="assets/img/icons/home.svg" alt="Registrace ikona">
+                </span>
+                <h3 class="cs_fs_24 cs_semibold cs_mb_4">Vytvořte si účet zdarma</h3>
+                <p class="mb-0">Registrace zabere méně než minutu. Žádná platební karta není potřeba – rovnou spusťte 14denní trial zdarma a vyzkoušejte všechny funkce.</p>
+              </div>
+              <div class="cs_iconbox cs_style_2">
+                <span class="cs_iconbox_icon cs_bg_1 cs_center cs_mb_18">
+                  <img src="assets/img/icons/products.svg" alt="Konfigurace ikona">
+                </span>
+                <h3 class="cs_fs_24 cs_semibold cs_mb_4">Nakonfigurujte svého chatbota</h3>
+                <p class="mb-0">Naučte bota vaše produkty, FAQ a způsob komunikace. Nastavte barvy, přivítání a osobnost chatbota tak, aby pasoval k vašemu brandu.</p>
+              </div>
+              <div class="cs_iconbox cs_style_2">
+                <span class="cs_iconbox_icon cs_bg_2 cs_center cs_mb_18">
+                  <img src="assets/img/icons/analytics.svg" alt="Instalace ikona">
+                </span>
+                <h3 class="cs_fs_24 cs_semibold cs_mb_4">Vložte na web – jeden řádek kódu</h3>
+                <p class="mb-0">Zkopírujte embed kód a vložte ho na váš web. Pro WordPress máme hotový plugin. Chatbot se okamžitě zobrazí vašim návštěvníkům.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cs_star_shape_4 position-absolute">
+        <img src="assets/img/star-shape.svg" alt="Star shape">
+      </div>
+      <div class="cs_height_0 cs_height_lg_80"></div>
+    </section>
+    <!-- End How It Work Section -->
+
+    <!-- Start Customization Section -->
+    <section class="position-relative">
+      <div class="cs_height_120 cs_height_lg_80"></div>
+      <div class="container">
+        <div class="cs_card cs_style_1 cs_type_3">
+          <div class="row cs_gap_y_50 position-relative z-1">
+            <div class="col-lg-6">
+              <div class="cs_card_thumbnail position-relative">
+                <img src="assets/img/dashboard.png" alt="Nexiflow dashboard přehledy">
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="cs_card_content">
+                <div class="cs_section_heading cs_style_1 cs_mb_27">
+                  <div class="cs_section_subtitle cs_fs_18 cs_heading_color cs_mb_22">
+                    <img src="assets/img/icons/star-1.svg" alt="Star icon">
+                    <span>Přehledy a analytika</span>
+                    <img src="assets/img/icons/star-1.svg" alt="Star icon">
+                  </div>
+                  <h2 class="cs_section_title cs_fs_48 cs_semibold wow fadeInLeft">Mějte přehled o každém zákazníkovi v reálném čase</h2>
+                  <p class="cs_card_desc mb-0">Sledujte výkon chatbota, spokojenost zákazníků i konverzní cesty na jednom místě. Data dostupná okamžitě, bez čekání.</p>
+                </div>
+                <div class="cs_iconbox_wrapper_1">
+                  <div class="cs_iconbox cs_style_1 cs_type_1">
+                    <span class="cs_iconbox_icon cs_center cs_accent_bg">
+                      <img src="assets/img/icons/advanced-tracking.svg" alt="Přehledy ikona">
+                    </span>
+                    <div class="cs_iconbox_info">
+                      <h3 class="cs_fs_20 cs_semibold cs_mb_1">Přehledy v reálném čase</h3>
+                      <p class="mb-0">Statistiky konverzací, zpráv a spokojenosti zákazníků ihned k dispozici</p>
+                    </div>
+                  </div>
+                  <div class="cs_iconbox cs_style_1 cs_type_1">
+                    <span class="cs_iconbox_icon cs_center cs_bg_1">
+                      <img src="assets/img/icons/in-depth.svg" alt="Funnel ikona">
+                    </span>
+                    <div class="cs_iconbox_info">
+                      <h3 class="cs_fs_20 cs_semibold cs_mb_1">Konverzní funnel a CSAT</h3>
+                      <p class="mb-0">Zjistěte kde zákazníci odcházejí a jak hodnotí váš servis</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cs_star_shape_5 position-absolute">
+          <img src="assets/img/3d-shape-2.png" alt="Vector shape">
+        </div>
+      </div>
+      <div class="cs_height_120 cs_height_lg_80"></div>
+    </section>
+    <!-- End Customization Section -->
+
+    <!-- Start Why Choose Us Section -->
+    <section class="cs_bg_filed position-relative" data-src="assets/img/whychoose-bg-1.svg">
+      <div class="cs_height_120 cs_height_lg_80"></div>
+      <div class="container">
+        <div class="cs_card cs_style_1 cs_type_4">
+          <div class="row cs_gap_y_50 position-relative z-1">
+            <div class="col-lg-6 order-lg-2">
+              <div class="cs_card_thumbnail">
+                <img src="assets/img/phone-img-2.png" alt="Nexiflow na mobilu">
+              </div>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+              <div class="cs_card_content">
+                <div class="cs_section_heading cs_style_1 cs_mb_27">
+                  <div class="cs_section_subtitle cs_fs_18 cs_white_color cs_mb_22">
+                    <img src="assets/img/icons/star-1.svg" alt="Star icon">
+                    <span>Proč Nexiflow</span>
+                    <img src="assets/img/icons/star-1.svg" alt="Star icon">
+                  </div>
+                  <h2 class="cs_section_title cs_fs_48 cs_semibold cs_white_color wow fadeInDown">Spolehlivý partner pro váš digitální zákaznický servis</h2>
+                  <p class="cs_card_desc cs_white_color mb-0">Nexiflow je navržen pro české a slovenské firmy, které chtějí moderní zákaznickou péči bez složitého nastavení a vysokých nákladů.</p>
+                </div>
+                <ul class="cs_list cs_style_2 cs_white_color cs_semibold cs_mp_0">
+                  <li>
+                    <span class="cs_list_icon cs_theme_color_4"><i class="fa-solid fa-circle-check"></i></span>
+                    <span>14 dní zdarma – bez platební karty</span>
+                  </li>
+                  <li>
+                    <span class="cs_list_icon cs_theme_color_4"><i class="fa-solid fa-circle-check"></i></span>
+                    <span>Česká podpora a komunikace v češtině</span>
+                  </li>
+                  <li>
+                    <span class="cs_list_icon cs_theme_color_4"><i class="fa-solid fa-circle-check"></i></span>
+                    <span>Snadné nastavení – hotovo za 10 minut</span>
+                  </li>
+                  <li>
+                    <span class="cs_list_icon cs_theme_color_4"><i class="fa-solid fa-circle-check"></i></span>
+                    <span>GDPR compliant – vaše data zůstávají bezpečná</span>
+                  </li>
+                </ul>
+                <a href="https://dashboard.webui.cz" aria-label="Začít zdarma" class="cs_btn cs_style_1 cs_theme_bg_4 cs_fs_14 cs_heading_color cs_bold text-uppercase">
+                  <span>Začít zdarma</span>
+                  <span class="cs_btn_icon"><i class="fa-solid fa-arrow-right"></i></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cs_height_0 cs_height_lg_80"></div>
+    </section>
+    <!-- End Why Choose Us Section -->
+
+    <!-- Start Pricing Section -->
+    <section class="position-relative overflow-hidden" id="cenik">
+      <div class="cs_height_120 cs_height_lg_80"></div>
+      <div class="container">
+        <div class="cs_section_heading cs_style_1 cs_center_column cs_mb_60 text-center position-relative z-1">
+          <div class="cs_section_subtitle cs_fs_18 cs_heading_color cs_mb_22">
+            <img src="assets/img/icons/star-1.svg" alt="Star icon">
+            <span>Ceník</span>
+            <img src="assets/img/icons/star-1.svg" alt="Star icon">
+          </div>
+          <h2 class="cs_section_title cs_fs_48 cs_semibold cs_mb_20 text-capitalize wow fadeInUp">Vyberte plán, který<br>vyhovuje vašemu byznysu</h2>
+          <div class="cs_center">
+            <ul class="cs_pricing_control cs_center cs_mp_0 cs_fs_14 cs_bold text-uppercase position-relative">
+              <li class="active"><a href="monthly" aria-label="Měsíční platba">Měsíčně</a></li>
+              <li>
+                <a href="yearly" aria-label="Roční platba">Ročně</a>
+                <div class="cs_offer_info cs_fs_20 cs_heading_color cs_heading_font cs_normal position-absolute">
+                  <span>Ušetřete 20 %</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row cs_row_gap_30 cs_gap_y_30 position-relative z-1">
+
+          <!-- Starter -->
+          <div class="col-xl-3 col-lg-6">
+            <div class="cs_pricing_table cs_style_2 cs_white_bg cs_radius_20">
+              <div class="cs_pricing_table_heading cs_mb_18">
+                <div>
+                  <h2 class="cs_plan_title cs_fs_24 cs_semibold cs_mb_7">Starter</h2>
+                  <p class="mb-0">Pro začínající weby</p>
+                </div>
+                <div class="cs_price cs_fs_74 cs_semibold cs_heading_color cs_heading_font">
+                  <span class="monthlyPrice">0</span><span class="yearlyPrice">0</span><small style="font-size:18px;"> Kč/měs</small>
+                </div>
+              </div>
+              <div class="cs_separator cs_mb_24"></div>
+              <ul class="cs_pricing_feature_list cs_mp_0 cs_mb_28">
+                <li><span class="cs_feature_icon"><i class="fa-solid fa-circle-check"></i></span><span>1 chatbot</span></li>
+                <li><span class="cs_feature_icon"><i class="fa-solid fa-circle-check"></i></span><span>100 konverzací / měsíc</span></li>
+                <li><span class="cs_feature_icon"><i class="fa-solid fa-circle-check"></i></span><span>Základní analytika</span></li>
+                <li><span class="cs_feature_icon"><i class="fa-solid fa-circle-check"></i></span><span>Embeddable JS widget</span></li>
+                <li><span class="cs_feature_icon"><i class="fa-solid fa-circle-check"></i></span><span>WordPress plugin</span></li>
+                <li><span class="cs_feature_icon"><i class="fa-solid fa-circle-check"></i></span><span>E-mailová podpora</span></li>
+                <li><span class="cs_feature_icon"><i class="fa-solid fa-circle-check"></i></span><span>14 dní Business trial zdarma</span></li>
+              </ul>
+              <a href="https://dashboard.webui.cz" aria-label="Začít zdarma" class="cs_btn cs_style_1 cs_center cs_fs_14 cs_bold cs_heading_color text-uppercase text-center">
+                <span>Začít zdarma</span>
+                <span class="cs_btn_icon"><i class="fa-solid fa-arrow-right"></i></span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Team -->
+          <div class="col-xl-3 col-lg-6">
+            <div class="cs_pricing_table cs_style_2 cs_white_bg cs_radius_20">
+              <div class="cs_pricing_table_heading cs_mb_18">
+                <div>
+                  <h2 class="cs_plan_title cs_fs_24 cs_semibold cs_mb_7">Team</h2>
+                  <p class="mb-0">Pro malé týmy</p>
+                </div>
+                <div class="cs_price cs_fs_74 cs_semibold cs_heading_color cs_heading_font">
+                  <span class="monthlyPrice">699</span><span class="yearlyPrice">559</span><small style="font-size:18px;"> Kč/měs</small>
+                </div>
+              </div>
+              <div class="cs_separator cs_mb_24"></div>
+              <ul class="cs_pricing_feature_list cs_mp_0 cs_mb_28">
+                <li><span class="cs_feature_icon"><i class="fa-solid fa-circle-check"></i></span><span>Vše ze Starter +</span></li>
+                <li><span class="cs_feature_icon"><i class="fa-solid fa-circle-check"></i></span><span>2 chatboti</span></li>
+                <li><span class="cs_feature_icon"><i class="fa-solid fa-circle-check"></i></span><span>500 konverzací / měsíc</span></li>
+                <li><span class="cs_feature_icon"><i class="fa-solid fa-circle-check"></i></span><span>Live chat přebírání</span></li>
+                <li><span class="cs_feature_icon"><i class="fa-solid fa-circle-check"></i></span><span>Slack notifikace</span></li>
+                <li><span class="cs_feature_icon"><i class="fa-solid fa-circle-check"></i></span><span>Interní poznámky</span></li>
+                <li><span class="cs_feature_icon"><i class="fa-solid fa-circle-check"></i></span><span>E-mailová podpora</span></li>
+              </ul>
+              <a href="https://dashboard.webui.cz" aria-label="Vybrat Team" class="cs_btn cs_style_1 cs_center cs_fs_14 cs_bold cs_heading_color text-uppercase text-center">
+                <span>Vybrat Team</span>
+                <span class="cs_btn_icon"><i class="fa-solid fa-arrow-right"></i></span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Business (highlighted) -->
+          <div class="col-xl-3 col-lg-6">
+            <div class="cs_pricing_table cs_style_2 cs_white_bg cs_radius_20 position-relative active">
+              <div class="cs_pricing_table_heading cs_mb_18 position-relative z-1">
+                <div>
+                  <h2 class="cs_plan_title cs_fs_24 cs_semibold cs_mb_7">Business</h2>
+                  <p class="mb-0">Pro rostoucí firmy</p>
+                </div>
+                <div class="cs_price cs_fs_74 cs_semibold cs_heading_color cs_heading_font">
+                  <span class="monthlyPrice">1 590</span><span class="yearlyPrice">1 270</span><small style="font-size:18px;"> Kč/měs</small>
+                </div>
+              </div>
+              <div class="cs_pricing_badge cs_heading_color cs_medium cs_theme_bg_4 text-center">Nejoblíbenější</div>
+              <div class="cs_separator cs_mb_24"></div>
+              <ul class="cs_pricing_feature_list cs_mp_0 cs_mb_28">
+                <li><span class="cs_feature_icon"><i class="fa-solid fa-circle-check"></i></span><span>Vše z Team +</span></li>
+                <li><span class="cs_feature_icon"><i class="fa-solid fa-circle-check"></i></span><span>5 chatbotů</span></li>
+                <li><span class="cs_feature_icon"><i class="fa-solid fa-circle-check"></i></span><span>2 000 konverzací / měsíc</span></li>
+                <li><span class="cs_feature_icon"><i class="fa-solid fa-circle-check"></i></span><span>Pokročilá analytika a CSAT</span></li>
+                <li><span class="cs_feature_icon"><i class="fa-solid fa-circle-check"></i></span><span>Webhooky a outbound integrace</span></li>
+                <li><span class="cs_feature_icon"><i class="fa-solid fa-circle-check"></i></span><span>Přiřazování konverzací týmu</span></li>
+                <li><span class="cs_feature_icon"><i class="fa-solid fa-circle-check"></i></span><span>Prioritní česká podpora</span></li>
+              </ul>
+              <a href="https://dashboard.webui.cz" aria-label="Vyzkoušet Business" class="cs_btn cs_style_1 cs_center cs_fs_14 cs_bold cs_heading_color text-uppercase text-center">
+                <span>Vyzkoušet 14 dní zdarma</span>
+                <span class="cs_btn_icon"><i class="fa-solid fa-arrow-right"></i></span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Enterprise -->
+          <div class="col-xl-3 col-lg-6">
+            <div class="cs_pricing_table cs_style_2 cs_white_bg cs_radius_20">
+              <div class="cs_pricing_table_heading cs_mb_18">
+                <div>
+                  <h2 class="cs_plan_title cs_fs_24 cs_semibold cs_mb_7">Enterprise</h2>
+                  <p class="mb-0">Pro velké organizace</p>
+                </div>
+                <div class="cs_price cs_fs_74 cs_semibold cs_heading_color cs_heading_font">
+                  <span class="monthlyPrice">3 490</span><span class="yearlyPrice">2 790</span><small style="font-size:18px;"> Kč/měs</small>
+                </div>
+              </div>
+              <div class="cs_separator cs_mb_24"></div>
+              <ul class="cs_pricing_feature_list cs_mp_0 cs_mb_28">
+                <li><span class="cs_feature_icon"><i class="fa-solid fa-circle-check"></i></span><span>Vše z Business +</span></li>
+                <li><span class="cs_feature_icon"><i class="fa-solid fa-circle-check"></i></span><span>Neomezené chatboty</span></li>
+                <li><span class="cs_feature_icon"><i class="fa-solid fa-circle-check"></i></span><span>Neomezené konverzace</span></li>
+                <li><span class="cs_feature_icon"><i class="fa-solid fa-circle-check"></i></span><span>Vlastní doména widgetu</span></li>
+                <li><span class="cs_feature_icon"><i class="fa-solid fa-circle-check"></i></span><span>SLA podpora a dohoda</span></li>
+                <li><span class="cs_feature_icon"><i class="fa-solid fa-circle-check"></i></span><span>Dedikovaný account manager</span></li>
+                <li><span class="cs_feature_icon"><i class="fa-solid fa-circle-check"></i></span><span>Přístup k API</span></li>
+              </ul>
+              <a href="mailto:info@nexiflow.cz" aria-label="Kontaktovat obchod" class="cs_btn cs_style_1 cs_center cs_fs_14 cs_bold cs_heading_color text-uppercase text-center">
+                <span>Kontaktovat obchod</span>
+                <span class="cs_btn_icon"><i class="fa-solid fa-arrow-right"></i></span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+        <div class="cs_pricing_shape_3 position-absolute">
+          <img src="assets/img/trash-group-2.svg" alt="Vector image">
+        </div>
+        <div class="cs_pricing_shape_4 position-absolute">
+          <img src="assets/img/vector-8.svg" alt="Vector image">
+        </div>
+        <div class="cs_pricing_shape_5 position-absolute">
+          <img src="assets/img/vector-9.svg" alt="Vector image">
+        </div>
+      </div>
+      <div class="cs_height_120 cs_height_lg_80"></div>
+    </section>
+    <!-- End Pricing Section -->
+
+    <!-- Start Counter Section -->
+    <div class="cs_counter cs_style_1 cs_type_1 cs_accent_bg" data-src="assets/img/counter-bg-2.svg">
+      <div class="container">
+        <div class="row cs_gap_y_30">
+          <div class="col-lg-3 col-sm-6">
+            <div class="cs_numberbox cs_center_column text-center">
+              <div class="cs_counter_number cs_fs_48 cs_semibold cs_white_color cs_mb_10">
+                <span class="odometer" data-count-to="14"></span> dní
+              </div>
+              <p class="cs_fs_24 cs_white_color mb-0">Zdarma<br>vyzkoušejte</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="cs_numberbox cs_center_column text-center">
+              <div class="cs_counter_number cs_fs_48 cs_semibold cs_white_color cs_mb_10">
+                <span class="odometer" data-count-to="10"></span> min
+              </div>
+              <p class="cs_fs_24 cs_white_color mb-0">Průměrná<br>instalace</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="cs_numberbox cs_center_column text-center">
+              <div class="cs_counter_number cs_fs_48 cs_semibold cs_white_color cs_mb_10">
+                <span class="odometer" data-count-to="100"></span> %
+              </div>
+              <p class="cs_fs_24 cs_white_color mb-0">Bez<br>programování</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="cs_numberbox cs_center_column text-center">
+              <div class="cs_counter_number cs_fs_48 cs_semibold cs_white_color cs_mb_10">
+                24/7
+              </div>
+              <p class="cs_fs_24 cs_white_color mb-0">Bot pracuje<br>nepřetržitě</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Counter Section -->
+
+    <!-- Start Customer Story Section -->
+    <section>
+      <div class="cs_height_120 cs_height_lg_80"></div>
+      <div class="container">
+        <div class="cs_card cs_style_1 cs_type_5">
+          <div class="row cs_gap_y_30">
+            <div class="col-lg-5 order-lg-2">
+              <a href="https://www.youtube.com/embed/HC-tgFdIcB0" aria-label="Přehrát video" class="cs_video cs_style_1 cs_center cs_video_open cs_bg_filed cs_radius_15 position-relative" data-src="assets/img/video-bg-1.jpg">
+                <span class="cs_player_btn cs_style_1 cs_center cs_radius_100 cs_theme_bg_3 cs_white_color position-relative"><i class="fa-solid fa-play"></i>
+                </span>
+                <div class="cs_vector_shape_5 position-absolute">
+                  <img src="assets/img/vector-10.svg" alt="Vector shape">
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-7 order-lg-1">
+              <div class="cs_card_content">
+                <div class="cs_section_heading cs_style_1 cs_mb_20">
+                  <div class="cs_section_subtitle cs_fs_18 cs_heading_color cs_mb_22">
+                    <img src="assets/img/icons/star-1.svg" alt="Star icon">
+                    <span>Příběh zákazníka</span>
+                    <img src="assets/img/icons/star-1.svg" alt="Star icon">
+                  </div>
+                  <h2 class="cs_section_title cs_fs_48 cs_semibold text-capitalize mb-0 wow fadeInDown">Jak Palírna Ambasáda chuti automatizovala zákaznickou komunikaci</h2>
+                </div>
+                <p class="cs_card_desc cs_mb_51">Palírna Ambasáda chuti nasadila Nexiflow chatbota na svůj web a okamžitě začala zachytávat leady a odpovídat zákazníkům i mimo pracovní dobu – zcela automaticky.</p>
+                <div class="cs_btns_group">
+                  <a href="#kontakt" aria-label="Chci podobné řešení" class="cs_btn cs_style_1 cs_bg_1 cs_fs_14 cs_bold cs_white_color text-uppercase">
+                    <span>Chci podobné řešení</span>
+                    <span class="cs_btn_icon"><i class="fa-solid fa-arrow-right"></i></span>
+                  </a>
+                  <div class="cs_client_info_wrapper">
+                    <img src="assets/img/customers-group-2.png" alt="Spokojení zákazníci">
+                    <div>
+                      <h3 class="cs_fs_18 cs_normal mb-0">Spokojení zákazníci</h3>
+                      <p class="mb-0"><span class="cs_theme_color_5"><i class="fa-solid fa-star"></i></span> 4.9 (hodnocení uživatelů)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Customer Story Section -->
+
+    <!-- Start Testimonial Section -->
+    <section class="cs_slider cs_style_1 cs_slider_gap_30 position-relative">
+      <div class="cs_height_120 cs_height_lg_80"></div>
+      <div class="container">
+        <div class="cs_testimonial_slider_wrapper cs_radius_20 position-relative">
+          <div class="cs_section_heading cs_style_1 cs_mb_10">
+            <h2 class="cs_section_title cs_fs_24 cs_normal mb-0">Co říkají naši zákazníci</h2>
+          </div>
+          <div class="cs_slider_container" data-autoplay="0" data-loop="1" data-speed="600" data-center="0" data-variable-width="0" data-slides-per-view="responsive" data-xs-slides="1" data-sm-slides="1" data-md-slides="1" data-lg-slides="1" data-add-slides="1">
+            <div class="cs_slider_wrapper">
+              <div class="cs_slide">
+                <div class="cs_testimonial cs_style_2">
+                  <div class="cs_testimonial_heading cs_mb_10">
+                    <span class="cs_quote_icon cs_center cs_white_bg cs_radius_100">
+                      <img src="assets/img/icons/qote.svg" alt="Quote icon">
+                    </span>
+                    <div class="cs_rating" data-rating="5">
+                      <div class="cs_rating_percentage"></div>
+                    </div>
+                  </div>
+                  <blockquote>Nexiflow nám ušetřil hodiny práce každý týden. Bot odpovídá zákazníkům i v noci a my ráno vidíme přehledný seznam leadů. Nastavení zabralo skutečně jen pár minut a integrace do WordPressu proběhla bez problémů. Rozhodně doporučuji každé firmě, která chce být dostupná 24/7.</blockquote>
+                  <div class="cs_avatar cs_style_1">
+                    <span class="cs_avatar_icon cs_center cs_radius_100">
+                      <img src="assets/img/avatar-5.jpg" alt="Avatar">
+                    </span>
+                    <div class="cs_avatar_info">
+                      <h3 class="cs_fs_20 cs_semibold mb-0">Tomáš Novák</h3>
+                      <p class="cs_fs_14 mb-0">Majitel e-shopu, Praha</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cs_slide">
+                <div class="cs_testimonial cs_style_2">
+                  <div class="cs_testimonial_heading cs_mb_10">
+                    <span class="cs_quote_icon cs_center cs_white_bg cs_radius_100">
+                      <img src="assets/img/icons/qote.svg" alt="Quote icon">
+                    </span>
+                    <div class="cs_rating" data-rating="5">
+                      <div class="cs_rating_percentage"></div>
+                    </div>
+                  </div>
+                  <blockquote>Hledali jsme chatbota s českou podporou a přijatelnou cenou. Nexiflow splnil všechna naše očekávání. Líbí se nám hlavně funkce live chatu – když vidíme, že zákazník váhá, prostě chat přebereme a pomůžeme mu přímo. Konverzní poměr nám výrazně vzrostl.</blockquote>
+                  <div class="cs_avatar cs_style_1">
+                    <span class="cs_avatar_icon cs_center cs_radius_100">
+                      <img src="assets/img/avatar-6.jpg" alt="Avatar">
+                    </span>
+                    <div class="cs_avatar_info">
+                      <h3 class="cs_fs_20 cs_semibold mb-0">Markéta Horáčková</h3>
+                      <p class="cs_fs_14 mb-0">Marketingová manažerka, Brno</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cs_slider_arrows cs_style_1">
+              <div class="cs_right_arrow rounded-circle cs_center cs_white_bg cs_theme_color_2 slick-arrow">
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cs_height_120 cs_height_lg_80"></div>
+    </section>
+    <!-- End Testimonial Section -->
+
+    <!-- Start Toolset Section -->
+    <section class="cs_gray_bg_2" id="integrace">
+      <div class="cs_height_120 cs_height_lg_80"></div>
+      <div class="container">
+        <div class="cs_toolset_content cs_center_column position-relative">
+          <div class="cs_toolset_logos">
+            <div class="cs_iconbox cs_style_3 cs_center_column cs_white_bg cs_radius_16 text-center">
+              <span class="cs_iconbox_icon cs_mb_14">
+                <img src="assets/img/icons/wordpress.svg" alt="WordPress ikona">
+              </span>
+              <p class="cs_medium mb-0">WordPress</p>
+            </div>
+            <div class="cs_iconbox cs_style_3 cs_center_column cs_white_bg cs_radius_16 text-center">
+              <span class="cs_iconbox_icon cs_mb_14">
+                <img src="assets/img/icons/woocommerce.svg" alt="WooCommerce ikona">
+              </span>
+              <p class="cs_medium mb-0">WooCommerce</p>
+            </div>
+            <div class="cs_iconbox cs_style_3 cs_center_column cs_white_bg cs_radius_16 text-center">
+              <span class="cs_iconbox_icon cs_mb_14">
+                <img src="assets/img/icons/shopify.svg" alt="Shopify ikona">
+              </span>
+              <p class="cs_medium mb-0">Shopify</p>
+            </div>
+            <div class="cs_iconbox cs_style_3 cs_center_column cs_white_bg cs_radius_16 text-center">
+              <span class="cs_iconbox_icon cs_mb_14">
+                <img src="assets/img/icons/html-5.svg" alt="HTML5 ikona">
+              </span>
+              <p class="cs_medium mb-0">HTML5</p>
+            </div>
+            <div class="cs_iconbox cs_style_3 cs_center_column cs_white_bg cs_radius_16 text-center">
+              <span class="cs_iconbox_icon cs_mb_14">
+                <img src="assets/img/icons/webflow.svg" alt="Webflow ikona">
+              </span>
+              <p class="cs_medium mb-0">Webflow</p>
+            </div>
+            <div class="cs_iconbox cs_style_3 cs_center_column cs_white_bg cs_radius_16 text-center">
+              <span class="cs_iconbox_icon cs_mb_14">
+                <img src="assets/img/icons/wix.svg" alt="Wix ikona">
+              </span>
+              <p class="cs_medium mb-0">Wix</p>
+            </div>
+            <div class="cs_iconbox cs_style_3 cs_center_column cs_white_bg cs_radius_16 text-center">
+              <span class="cs_iconbox_icon cs_mb_14">
+                <img src="assets/img/icons/slack.svg" alt="Slack ikona">
+              </span>
+              <p class="cs_medium mb-0">Slack</p>
+            </div>
+            <div class="cs_iconbox cs_style_3 cs_center_column cs_white_bg cs_radius_16 text-center">
+              <span class="cs_iconbox_icon cs_mb_14">
+                <img src="assets/img/icons/prestashop.svg" alt="PrestaShop ikona">
+              </span>
+              <p class="cs_medium mb-0">PrestaShop</p>
+            </div>
+            <div class="cs_iconbox cs_style_3 cs_center_column cs_white_bg cs_radius_16 text-center">
+              <span class="cs_iconbox_icon cs_mb_14">
+                <img src="assets/img/icons/opencart.svg" alt="OpenCart ikona">
+              </span>
+              <p class="cs_medium mb-0">OpenCart</p>
+            </div>
+            <div class="cs_iconbox cs_style_3 cs_center_column cs_white_bg cs_radius_16 text-center">
+              <span class="cs_iconbox_icon cs_mb_14">
+                <img src="assets/img/icons/joomla.svg" alt="Joomla ikona">
+              </span>
+              <p class="cs_medium mb-0">Joomla</p>
+            </div>
+            <div class="cs_iconbox cs_style_3 cs_center_column cs_white_bg cs_radius_16 text-center">
+              <span class="cs_iconbox_icon cs_mb_14">
+                <img src="assets/img/icons/squarespace.svg" alt="Squarespace ikona">
+              </span>
+              <p class="cs_medium mb-0">Squarespace</p>
+            </div>
+            <div class="cs_iconbox cs_style_3 cs_center_column cs_white_bg cs_radius_16 text-center">
+              <span class="cs_iconbox_icon cs_mb_14">
+                <img src="assets/img/icons/hubspot.svg" alt="HubSpot ikona">
+              </span>
+              <p class="cs_medium mb-0">HubSpot</p>
+            </div>
+          </div>
+          <div class="cs_toolset_text text-center">
+            <div class="cs_section_heading cs_style_1 cs_mb_20">
+              <div class="cs_section_subtitle cs_fs_18 cs_heading_color cs_mb_22">
+                <img src="assets/img/icons/star-1.svg" alt="Star icon">
+                <span>Integrace</span>
+                <img src="assets/img/icons/star-1.svg" alt="Star icon">
+              </div>
+              <h2 class="cs_section_title cs_fs_48 cs_semibold text-capitalize mb-0 wow fadeInUp">Funguje kdekoliv,<br>kde máte web.</h2>
+            </div>
+            <p class="cs_card_desc cs_mb_51">Nexiflow se integruje s jakoukoliv webovou platformou. Stačí jeden řádek kódu a chatbot je na vašem webu. Pro WordPress a WooCommerce máme hotový plugin.</p>
+            <a href="#kontakt" aria-label="Zobrazit všechny integrace" class="cs_btn cs_style_1 cs_bg_1 cs_fs_14 cs_bold cs_white_color text-uppercase">
+              <span>Zobrazit všechny integrace</span>
+              <span class="cs_btn_icon"><i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="cs_height_120 cs_height_lg_80"></div>
+    </section>
+    <!-- End Toolset Section -->
+
+    <!-- Start Footer Section -->
+    <footer class="cs_footer cs_style_1 cs_type_1 cs_accent_bg cs_bg_filed cs_white_color" data-src="assets/img/footer-bg-2.svg" id="kontakt">
+      <div class="cs_height_130 cs_height_lg_80"></div>
+      <div class="container">
+        <div class="cs_footer_top position-relative">
+          <ul class="cs_location_list cs_mp_0">
+            <li>
+              <span class="cs_location_icon cs_center cs_theme_color_4 cs_radius_100">
+                <i class="fa-solid fa-envelope"></i>
+              </span>
+              <a href="mailto:info@nexiflow.cz" aria-label="Napsat e-mail">info@nexiflow.cz</a>
+            </li>
+            <li>
+              <span class="cs_location_icon cs_center cs_theme_color_4 cs_radius_100">
+                <i class="fa-solid fa-globe"></i>
+              </span>
+              <a href="https://dashboard.webui.cz" aria-label="Přihlásit se">dashboard.webui.cz</a>
+            </li>
+            <li>
+              <span class="cs_location_icon cs_center cs_theme_color_4 cs_radius_100">
+                <i class="fa-solid fa-location-dot"></i>
+              </span>
+              <p class="mb-0">Praha, Česká republika</p>
+            </li>
+          </ul>
+        </div>
+        <div class="cs_footer_main">
+          <div class="cs_footer_widget_wrapper">
+            <div class="cs_footer_widget cs_text_widget">
+              <div class="cs_brand cs_mb_32">
+                <img src="assets/img/nexiflow-logo-white.svg" alt="Nexiflow logo">
+              </div>
+              <p class="cs_mb_32">AI chatbot pro váš web. Automatizujte zákaznickou podporu, zachytávejte leady a nikdy nenechte zákazníka bez odpovědi.</p>
+              <div class="cs_social_links cs_style_1 cs_heading_color">
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+              </div>
+            </div>
+            <div class="cs_footer_widget cs_links_widget">
+              <h3 class="cs_footer_widget_title cs_fs_24 cs_semibold cs_white_color cs_mb_29">Produkt</h3>
+              <ul class="cs_footer_menu cs_mp_0">
+                <li><a href="#funkce" aria-label="Funkce">Funkce</a></li>
+                <li><a href="#cenik" aria-label="Ceník">Ceník</a></li>
+                <li><a href="#integrace" aria-label="Integrace">Integrace</a></li>
+                <li><a href="https://dashboard.webui.cz" aria-label="Přihlásit se">Přihlásit se</a></li>
+                <li><a href="https://dashboard.webui.cz" aria-label="Začít zdarma">Začít zdarma</a></li>
+              </ul>
+            </div>
+            <div class="cs_footer_widget cs_help_widget">
+              <h3 class="cs_footer_widget_title cs_fs_24 cs_semibold cs_white_color cs_mb_29">Firma</h3>
+              <ul class="cs_footer_menu cs_mp_0">
+                <li><a href="#kontakt" aria-label="O nás">O nás</a></li>
+                <li><a href="mailto:info@nexiflow.cz" aria-label="Kontakt">Kontakt</a></li>
+                <li><a href="#" aria-label="Obchodní podmínky">Obchodní podmínky</a></li>
+                <li><a href="#" aria-label="Ochrana osobních údajů">Ochrana osobních údajů</a></li>
+              </ul>
+            </div>
+            <div class="cs_footer_widget cs_contact_widget">
+              <h3 class="cs_footer_widget_title cs_fs_24 cs_semibold cs_white_color cs_mb_29">Podpora</h3>
+              <ul class="cs_footer_menu cs_mp_0">
+                <li><a href="mailto:info@nexiflow.cz" aria-label="Podpora">Centrum podpory</a></li>
+                <li><a href="#jak-to-funguje" aria-label="Jak to funguje">Jak to funguje</a></li>
+                <li><a href="https://dashboard.webui.cz" aria-label="Demo">Vyzkoušet demo</a></li>
+                <li><a href="#" aria-label="Dokumentace">Dokumentace API</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cs_footer_bottom position-relative">
+        <div class="container">
+          <div class="cs_footer_text cs_white_color text-center">Copyright &copy; <span class="cs_getting_year"></span> Nexiflow – produkt <a href="https://webui.cz" style="color:inherit;text-decoration:underline;">WEBUI.CZ</a></div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer Section -->
+
+    <!-- Start Scroll Up Button -->
+    <button type="button" aria-label="Scrollovat nahoru" class="cs_scrollup cs_purple_bg cs_white_color cs_radius_100">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 10L1.7625 11.7625L8.75 4.7875V20H11.25V4.7875L18.225 11.775L20 10L10 0L0 10Z" fill="currentColor" />
+      </svg>
+    </button>
+    <!-- End Scroll Up Button -->
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/jquery.slick.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/odometer.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 40" width="120" height="40">
+  <circle cx="20" cy="20" r="16" fill="#21759b"/>
+  <text x="13" y="26" font-family="Georgia, serif" font-size="14" font-weight="700" fill="white">W</text>
+  <text x="38" y="26" font-family="'Segoe UI', Arial, sans-serif" font-size="18" font-weight="700" fill="#21759b">WordPress</text>
+</svg>
