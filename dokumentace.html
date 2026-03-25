@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html class="no-js" lang="cs">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Dokumentace Nexiflow – jak nainstalovat AI chatbot na web, WordPress nebo Webflow. Rychlý start za 5 minut.">
+    <meta name="author" content="Nexiflow">
+    <link rel="icon" href="assets/img/favicon.png">
+    <title>Dokumentace – Nexiflow</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+      body { padding-top: 90px; background: #f8faf9; }
+      .nf-docs-wrap { display: flex; gap: 40px; max-width: 1100px; margin: 0 auto; padding: 60px 24px 80px; }
+      .nf-docs-sidebar { width: 230px; flex-shrink: 0; }
+      .nf-docs-sidebar-inner { position: sticky; top: 110px; }
+      .nf-docs-sidebar h3 { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: #999; margin: 24px 0 8px; }
+      .nf-docs-sidebar ul { list-style: none; padding: 0; margin: 0; }
+      .nf-docs-sidebar ul li a { display: block; font-size: 14px; color: #555; padding: 5px 10px; border-radius: 6px; text-decoration: none; transition: all .15s; }
+      .nf-docs-sidebar ul li a:hover, .nf-docs-sidebar ul li a.active { background: #e8f5f0; color: var(--accent-color); font-weight: 600; }
+      .nf-docs-content { flex: 1; min-width: 0; }
+      .nf-docs-content h1 { font-size: 36px; font-weight: 800; color: var(--heading-color); margin-bottom: 8px; }
+      .nf-docs-content .nf-lead { font-size: 17px; color: #666; margin-bottom: 40px; line-height: 1.7; }
+      .nf-docs-content h2 { font-size: 22px; font-weight: 700; color: var(--heading-color); margin: 48px 0 12px; padding-bottom: 10px; border-bottom: 2px solid #e4ede9; }
+      .nf-docs-content h3 { font-size: 17px; font-weight: 700; color: var(--heading-color); margin: 28px 0 8px; }
+      .nf-docs-content p, .nf-docs-content li { font-size: 15px; color: #444; line-height: 1.8; margin-bottom: 10px; }
+      .nf-docs-content ul { padding-left: 20px; }
+      .nf-docs-content a { color: var(--accent-color); }
+      .nf-code { background: #1a2b22; color: #c8f0d8; border-radius: 10px; padding: 20px 24px; font-size: 13px; font-family: monospace; overflow-x: auto; margin: 16px 0; line-height: 1.7; }
+      .nf-code .cm { color: #6b9e7a; }
+      .nf-tip { background: #f0faf5; border: 1px solid #b6dfc9; border-radius: 10px; padding: 14px 18px; font-size: 14px; color: #1a4a30; margin: 16px 0; }
+      .nf-tip i { color: var(--accent-color); margin-right: 6px; }
+      .nf-step { display: flex; gap: 16px; margin-bottom: 28px; }
+      .nf-step-num { width: 32px; height: 32px; border-radius: 50%; background: var(--accent-color); color: #fff; font-weight: 800; font-size: 14px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+      .nf-step-body h3 { margin-top: 0; }
+      .nf-card-sm { background: #fff; border: 1px solid #e0ede6; border-radius: 12px; padding: 20px 22px; margin-bottom: 16px; }
+      .nf-card-sm h4 { font-size: 15px; font-weight: 700; color: var(--heading-color); margin-bottom: 6px; }
+      .nf-card-sm p { font-size: 14px; color: #666; margin: 0; }
+      @media(max-width: 768px){ .nf-docs-wrap { flex-direction: column; } .nf-docs-sidebar { width: 100%; } .nf-docs-sidebar-inner { position: static; } }
+    </style>
+  </head>
+  <body>
+    <div class="cs_preloader cs_white_bg">
+      <div class="cs_preloader_in position-relative"><span></span></div>
+    </div>
+
+    <header class="cs_site_header cs_style_1 cs_type_1 cs_sticky_header cs_heading_color cs_heading_font position-relative">
+      <div class="cs_main_header position-relative z-1">
+        <div class="container">
+          <div class="cs_main_header_in position-relative">
+            <div class="cs_header_shape position-absolute"><img src="assets/img/header-shape-2.svg" alt=""></div>
+            <div class="cs_main_header_left position-relative z-1">
+              <a class="cs_site_branding" href="/"><img src="assets/img/nexiflow-logo.svg" alt="Nexiflow logo"></a>
+            </div>
+            <div class="cs_main_header_center">
+              <div class="cs_nav">
+                <ul class="cs_nav_list">
+                  <li><a href="/#funkce">Funkce</a></li>
+                  <li><a href="/#jak-to-funguje">Jak to funguje</a></li>
+                  <li><a href="/pricing">Ceník</a></li>
+                  <li><a href="/dokumentace" style="color:var(--accent-color);font-weight:700;">Dokumentace</a></li>
+                  <li><a href="/#kontakt">Kontakt</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="cs_main_header_right">
+              <a href="https://dashboard.nexiflow.cz/register" class="cs_btn cs_style_1 cs_bg_1 cs_fs_14 cs_bold cs_white_color text-uppercase">
+                <span>Začít zdarma</span>
+                <span class="cs_btn_icon"><i class="fa-solid fa-arrow-right"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="nf-docs-wrap">
+      <aside class="nf-docs-sidebar">
+        <div class="nf-docs-sidebar-inner">
+          <h3>Začínáme</h3>
+          <ul>
+            <li><a href="#rychly-start" class="active">Rychlý start</a></li>
+            <li><a href="#vytvoreni-chatbotu">Vytvoření chatbotu</a></li>
+            <li><a href="#znalostni-baze">Znalostní báze</a></li>
+          </ul>
+          <h3>Instalace</h3>
+          <ul>
+            <li><a href="#html-web">HTML / jakýkoliv web</a></li>
+            <li><a href="#wordpress">WordPress plugin</a></li>
+            <li><a href="#webflow">Webflow</a></li>
+          </ul>
+          <h3>Pokročilé</h3>
+          <ul>
+            <li><a href="#inbox">Inbox & live chat</a></li>
+            <li><a href="#webhooky">Webhooky</a></li>
+            <li><a href="#api">API (Enterprise)</a></li>
+          </ul>
+          <h3>Podpora</h3>
+          <ul>
+            <li><a href="mailto:info@nexiflow.cz">Napsat podpoře</a></li>
+            <li><a href="/#kontakt">Rezervovat call</a></li>
+          </ul>
+        </div>
+      </aside>
+
+      <main class="nf-docs-content">
+        <h1>Dokumentace Nexiflow</h1>
+        <p class="nf-lead">Vítejte v dokumentaci. Chatbot na vašem webu máte za 5 minut — bez programování.</p>
+
+        <h2 id="rychly-start">Rychlý start</h2>
+        <div class="nf-step">
+          <div class="nf-step-num">1</div>
+          <div class="nf-step-body">
+            <h3>Vytvořte účet</h3>
+            <p>Přejděte na <a href="https://dashboard.nexiflow.cz/register">dashboard.nexiflow.cz/register</a> a zaregistrujte se zdarma. Automaticky získáte 14 dní Business plánu.</p>
+          </div>
+        </div>
+        <div class="nf-step">
+          <div class="nf-step-num">2</div>
+          <div class="nf-step-body">
+            <h3>Vytvořte chatbota</h3>
+            <p>V dashboardu klikněte na <strong>Chatboti → Nový chatbot</strong>. Pojmenujte ho, nastavte barvu a uvítací zprávu.</p>
+          </div>
+        </div>
+        <div class="nf-step">
+          <div class="nf-step-num">3</div>
+          <div class="nf-step-body">
+            <h3>Přidejte znalosti</h3>
+            <p>V záložce <strong>Znalostní báze</strong> vložte texty o vašem produktu, FAQ nebo importujte články. Čím víc dat, tím přesnější odpovědi.</p>
+          </div>
+        </div>
+        <div class="nf-step">
+          <div class="nf-step-num">4</div>
+          <div class="nf-step-body">
+            <h3>Vložte na web</h3>
+            <p>Zkopírujte embed kód (viz níže) a vložte ho na váš web. Hotovo.</p>
+          </div>
+        </div>
+
+        <h2 id="vytvoreni-chatbotu">Vytvoření chatbotu</h2>
+        <p>Každý chatbot má tyto základní nastavení:</p>
+        <ul>
+          <li><strong>Jméno bota</strong> – zobrazuje se zákazníkům v hlavičce widgetu</li>
+          <li><strong>Systémová instrukce</strong> – definuje charakter a chování bota (např. „Jsi zákaznická podpora e-shopu XY, odpovídáš česky, jsi přátelský")</li>
+          <li><strong>Uvítací zpráva</strong> – první zpráva zobrazená při otevření chatu</li>
+          <li><strong>Barva widgetu</strong> – přizpůsobí se vašemu brandu</li>
+          <li><strong>Avatar bota</strong> – vlastní obrázek nebo výchozí ikona</li>
+        </ul>
+
+        <div class="nf-tip">
+          <i class="fa-solid fa-lightbulb"></i>
+          <strong>Tip:</strong> Systémová instrukce je nejdůležitější nastavení. Čím konkrétnější instrukci napíšete, tím lépe bude bot odpovídat ve vašem stylu.
+        </div>
+
+        <h2 id="znalostni-baze">Znalostní báze</h2>
+        <p>Znalostní báze je základ kvalitních odpovědí. Můžete přidat:</p>
+        <ul>
+          <li><strong>Textové články</strong> – FAQ, popis produktů, ceník, podmínky</li>
+          <li><strong>Přílohy</strong> – PDF dokumenty (plán Solo a výše)</li>
+          <li><strong>URL import</strong> – Nexiflow stránku automaticky zpracuje (připravujeme)</li>
+        </ul>
+        <p>Doporučujeme začít s 5–10 klíčovými FAQ, které zákazníci nejčastěji pokládají.</p>
+
+        <h2 id="html-web">HTML / jakýkoliv web</h2>
+        <p>Vložte tento kód před uzavírací tag <code>&lt;/body&gt;</code> na každé stránce, kde chcete chatbot zobrazit:</p>
+        <div class="nf-code">
+<span class="cm">&lt;!-- Nexiflow chatbot --&gt;</span><br>
+&lt;script<br>
+&nbsp;&nbsp;src="https://dashboard.nexiflow.cz/api/widget/<strong>VAS_BOT_ID</strong>"<br>
+&nbsp;&nbsp;async<br>
+&gt;&lt;/script&gt;
+        </div>
+        <p><code>VAS_BOT_ID</code> najdete v dashboardu pod <strong>Chatboti → Váš bot → Embed kód</strong>.</p>
+
+        <div class="nf-tip">
+          <i class="fa-solid fa-circle-info"></i>
+          Bot ID je unikátní pro každý chatbot. Pokud máte více chatbotů, každý má jiné ID.
+        </div>
+
+        <h2 id="wordpress">WordPress plugin</h2>
+        <p>Pro WordPress máme hotový plugin – instalace je jednoduchá:</p>
+        <div class="nf-step">
+          <div class="nf-step-num">1</div>
+          <div class="nf-step-body">
+            <h3>Stáhněte plugin</h3>
+            <p>V dashboardu přejděte na <strong>Chatboti → Embed kód → WordPress</strong> a stáhněte ZIP soubor.</p>
+          </div>
+        </div>
+        <div class="nf-step">
+          <div class="nf-step-num">2</div>
+          <div class="nf-step-body">
+            <h3>Nainstalujte do WordPressu</h3>
+            <p>WordPress admin → <strong>Pluginy → Přidat nový → Nahrát plugin</strong> → vyberte ZIP → Aktivovat.</p>
+          </div>
+        </div>
+        <div class="nf-step">
+          <div class="nf-step-num">3</div>
+          <div class="nf-step-body">
+            <h3>Vložte Bot ID</h3>
+            <p>V nastavení pluginu vložte váš Bot ID z dashboardu. Plugin automaticky přidá chatbot na celý web.</p>
+          </div>
+        </div>
+
+        <h2 id="webflow">Webflow</h2>
+        <p>V Webflow přejděte na <strong>Projekt nastavení → Custom Code → Footer Code</strong> a vložte embed script (stejný jako pro HTML web).</p>
+
+        <h2 id="inbox">Inbox & live chat</h2>
+        <p>Veškeré konverzace zákazníků najdete v <strong>Inbox</strong> sekci dashboardu. Můžete:</p>
+        <ul>
+          <li>Přebírat konverzaci od bota ručně (live chat mód)</li>
+          <li>Označovat konverzace štítky a přiřazovat členům týmu</li>
+          <li>Přidávat interní poznámky</li>
+          <li>Exportovat historii do CSV</li>
+        </ul>
+
+        <h2 id="webhooky">Webhooky</h2>
+        <p>Nexiflow umí odesílat data o nových konverzacích na váš webhook endpoint (plán Business+). Využití:</p>
+        <ul>
+          <li>Propojení s CRM (HubSpot, Pipedrive)</li>
+          <li>Notifikace do Slacku / Teams</li>
+          <li>Automatizace v Make nebo Zapier</li>
+        </ul>
+        <p>Nastavení: <strong>Dashboard → Nastavení → Webhooky</strong></p>
+        <p>Každý request obsahuje hlavičku <code>X-Nexiflow-Signature</code> pro ověření pravosti.</p>
+
+        <h2 id="api">API přístup (Enterprise)</h2>
+        <p>Enterprise zákazníci mají přístup k REST API pro plnou integraci. Dokumentace API je dostupná po přihlášení v dashboardu.</p>
+        <p>Potřebujete API přístup? Napište nám na <a href="mailto:info@nexiflow.cz">info@nexiflow.cz</a>.</p>
+      </main>
+    </div>
+
+    <footer class="cs_footer cs_style_1 cs_type_1 cs_accent_bg cs_bg_filed cs_white_color" data-src="assets/img/footer-bg-2.svg">
+      <div class="cs_height_130 cs_height_lg_80"></div>
+      <div class="container">
+        <div class="cs_footer_top position-relative">
+          <ul class="cs_location_list cs_mp_0">
+            <li><span class="cs_location_icon cs_center cs_theme_color_4 cs_radius_100"><i class="fa-solid fa-envelope"></i></span><a href="mailto:info@nexiflow.cz">info@nexiflow.cz</a></li>
+            <li><span class="cs_location_icon cs_center cs_theme_color_4 cs_radius_100"><i class="fa-solid fa-globe"></i></span><a href="https://dashboard.nexiflow.cz">dashboard.nexiflow.cz</a></li>
+            <li><span class="cs_location_icon cs_center cs_theme_color_4 cs_radius_100"><i class="fa-solid fa-location-dot"></i></span><p class="mb-0">Praha, Česká republika</p></li>
+          </ul>
+        </div>
+        <div class="cs_footer_main">
+          <div class="cs_footer_widget_wrapper">
+            <div class="cs_footer_widget cs_text_widget">
+              <div class="cs_brand cs_mb_32"><img src="assets/img/nexiflow-logo-white.svg" alt="Nexiflow logo"></div>
+              <p class="cs_mb_32">AI chatbot pro váš web. Automatizujte zákaznickou podporu, zachytávejte leady a nikdy nenechte zákazníka bez odpovědi.</p>
+            </div>
+            <div class="cs_footer_widget cs_links_widget">
+              <h3 class="cs_footer_widget_title cs_fs_24 cs_semibold cs_white_color cs_mb_29">Produkt</h3>
+              <ul class="cs_footer_menu cs_mp_0">
+                <li><a href="/#funkce">Funkce</a></li>
+                <li><a href="/pricing">Ceník</a></li>
+                <li><a href="/dokumentace">Dokumentace</a></li>
+                <li><a href="/changelog">Changelog</a></li>
+              </ul>
+            </div>
+            <div class="cs_footer_widget cs_help_widget">
+              <h3 class="cs_footer_widget_title cs_fs_24 cs_semibold cs_white_color cs_mb_29">Firma</h3>
+              <ul class="cs_footer_menu cs_mp_0">
+                <li><a href="/o-nas">O nás</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/obchodni-podminky">Obchodní podmínky</a></li>
+                <li><a href="/ochrana-osobnich-udaju">Ochrana osobních údajů</a></li>
+              </ul>
+            </div>
+            <div class="cs_footer_widget cs_contact_widget">
+              <h3 class="cs_footer_widget_title cs_fs_24 cs_semibold cs_white_color cs_mb_29">Podpora</h3>
+              <ul class="cs_footer_menu cs_mp_0">
+                <li><a href="mailto:info@nexiflow.cz">Centrum podpory</a></li>
+                <li><a href="/#jak-to-funguje">Jak to funguje</a></li>
+                <li><a href="https://dashboard.nexiflow.cz/register">Vyzkoušet demo</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cs_footer_bottom position-relative">
+        <div class="container">
+          <div class="cs_footer_text cs_white_color text-center">Copyright &copy; <span class="cs_getting_year"></span> Nexiflow – produkt <a href="https://webui.cz" style="color:inherit;text-decoration:underline;">WEBUI.CZ</a></div>
+        </div>
+      </div>
+    </footer>
+
+    <button type="button" aria-label="Scrollovat nahoru" class="cs_scrollup cs_purple_bg cs_white_color cs_radius_100">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M0 10L1.7625 11.7625L8.75 4.7875V20H11.25V4.7875L18.225 11.775L20 10L10 0L0 10Z" fill="currentColor"/></svg>
+    </button>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>document.querySelector('.cs_getting_year').textContent = new Date().getFullYear();</script>
+  </body>
+</html>

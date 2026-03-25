@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html class="no-js" lang="cs">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Changelog Nexiflow – přehled všech aktualizací, nových funkcí a oprav od spuštění platformy.">
+    <meta name="author" content="Nexiflow">
+    <link rel="icon" href="assets/img/favicon.png">
+    <title>Changelog – Nexiflow</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+      body { padding-top: 90px; background: #f8faf9; }
+      .nf-cl-wrap { max-width: 760px; margin: 0 auto; padding: 64px 24px 80px; }
+      .nf-cl-header { text-align: center; margin-bottom: 64px; }
+      .nf-cl-header .nf-tag { display: inline-block; background: #d1fae5; color: #065f46; font-size: 13px; font-weight: 700; padding: 6px 16px; border-radius: 100px; margin-bottom: 16px; }
+      .nf-cl-header h1 { font-size: 40px; font-weight: 800; color: var(--heading-color); margin-bottom: 12px; }
+      .nf-cl-header p { font-size: 16px; color: #666; }
+      .nf-cl-entry { display: flex; gap: 32px; margin-bottom: 56px; }
+      .nf-cl-date-col { width: 110px; flex-shrink: 0; text-align: right; padding-top: 4px; }
+      .nf-cl-date-col .nf-version { font-size: 13px; font-weight: 800; color: var(--accent-color); letter-spacing: .04em; }
+      .nf-cl-date-col .nf-date { font-size: 12px; color: #aaa; margin-top: 2px; }
+      .nf-cl-line { width: 1px; background: #d4e8dc; position: relative; flex-shrink: 0; }
+      .nf-cl-line::before { content: ''; width: 10px; height: 10px; border-radius: 50%; background: var(--accent-color); position: absolute; top: 6px; left: 50%; transform: translateX(-50%); }
+      .nf-cl-body { flex: 1; padding-top: 0; }
+      .nf-cl-body h2 { font-size: 20px; font-weight: 700; color: var(--heading-color); margin: 0 0 12px; }
+      .nf-cl-body p { font-size: 14px; color: #555; line-height: 1.7; margin-bottom: 14px; }
+      .nf-cl-tags { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 14px; }
+      .nf-cl-tag { font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 100px; text-transform: uppercase; letter-spacing: .04em; }
+      .nf-cl-tag.new { background: #d1fae5; color: #065f46; }
+      .nf-cl-tag.fix { background: #fee2e2; color: #991b1b; }
+      .nf-cl-tag.improve { background: #dbeafe; color: #1e40af; }
+      .nf-cl-tag.security { background: #fef3c7; color: #92400e; }
+      .nf-cl-list { list-style: none; padding: 0; margin: 0; }
+      .nf-cl-list li { font-size: 14px; color: #444; padding: 6px 0; border-bottom: 1px solid #eef2ee; display: flex; align-items: flex-start; gap: 10px; line-height: 1.6; }
+      .nf-cl-list li:last-child { border-bottom: none; }
+      .nf-cl-list li i { font-size: 12px; margin-top: 4px; flex-shrink: 0; }
+      .nf-cl-list li i.fa-plus { color: #059669; }
+      .nf-cl-list li i.fa-wrench { color: #dc2626; }
+      .nf-cl-list li i.fa-arrow-up { color: #2563eb; }
+      .nf-cl-list li i.fa-shield { color: #d97706; }
+      .nf-cl-current { border: 2px solid var(--accent-color); border-radius: 16px; padding: 20px 24px; background: #fff; margin-bottom: 56px; }
+      .nf-cl-current .nf-current-badge { display: inline-block; background: var(--accent-color); color: #fff; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 100px; margin-bottom: 12px; }
+    </style>
+  </head>
+  <body>
+    <div class="cs_preloader cs_white_bg"><div class="cs_preloader_in position-relative"><span></span></div></div>
+
+    <header class="cs_site_header cs_style_1 cs_type_1 cs_sticky_header cs_heading_color cs_heading_font position-relative">
+      <div class="cs_main_header position-relative z-1">
+        <div class="container">
+          <div class="cs_main_header_in position-relative">
+            <div class="cs_header_shape position-absolute"><img src="assets/img/header-shape-2.svg" alt=""></div>
+            <div class="cs_main_header_left position-relative z-1">
+              <a class="cs_site_branding" href="/"><img src="assets/img/nexiflow-logo.svg" alt="Nexiflow logo"></a>
+            </div>
+            <div class="cs_main_header_center">
+              <div class="cs_nav">
+                <ul class="cs_nav_list">
+                  <li><a href="/#funkce">Funkce</a></li>
+                  <li><a href="/#jak-to-funguje">Jak to funguje</a></li>
+                  <li><a href="/pricing">Ceník</a></li>
+                  <li><a href="/dokumentace">Dokumentace</a></li>
+                  <li><a href="/#kontakt">Kontakt</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="cs_main_header_right">
+              <a href="https://dashboard.nexiflow.cz/register" class="cs_btn cs_style_1 cs_bg_1 cs_fs_14 cs_bold cs_white_color text-uppercase">
+                <span>Začít zdarma</span>
+                <span class="cs_btn_icon"><i class="fa-solid fa-arrow-right"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="nf-cl-wrap">
+      <div class="nf-cl-header">
+        <div class="nf-tag">📋 Changelog</div>
+        <h1>Co je nového v Nexiflow</h1>
+        <p>Pravidelně přidáváme nové funkce a vylepšujeme platformu na základě zpětné vazby zákazníků.</p>
+      </div>
+
+      <!-- v1.7 – aktuální -->
+      <div class="nf-cl-current">
+        <div class="nf-current-badge">✦ Aktuální verze</div>
+        <div class="nf-cl-tags">
+          <span class="nf-cl-tag new">Nové</span>
+          <span class="nf-cl-tag improve">Vylepšení</span>
+        </div>
+        <h2>v1.7 – Stripe platby, ceníkové plány & dashboard redesign</h2>
+        <p style="font-size:12px;color:#aaa;margin-bottom:12px;">Březen 2026</p>
+        <ul class="nf-cl-list">
+          <li><i class="fa-solid fa-plus"></i><span>Integrace Stripe – plné předplatné, monthly/yearly billing, okamžitá aktivace plánu</span></li>
+          <li><i class="fa-solid fa-plus"></i><span>Nová ceníková stránka s přehledem plánů Starter, Team, Business, Enterprise</span></li>
+          <li><i class="fa-solid fa-plus"></i><span>Welcome email po registraci s pozváním na onboarding call</span></li>
+          <li><i class="fa-solid fa-plus"></i><span>Stránka /forgot-password a /reset-password pro obnovu hesla</span></li>
+          <li><i class="fa-solid fa-arrow-up"></i><span>Redesign přihlašovací a registrační stránky</span></li>
+          <li><i class="fa-solid fa-arrow-up"></i><span>Zlepšení výkonu konverzačního inboxu – bulk akce, filtrování</span></li>
+        </ul>
+      </div>
+
+      <!-- v1.6 -->
+      <div class="nf-cl-entry">
+        <div class="nf-cl-date-col">
+          <div class="nf-version">v1.6</div>
+          <div class="nf-date">Únor 2026</div>
+        </div>
+        <div class="nf-cl-line"></div>
+        <div class="nf-cl-body">
+          <div class="nf-cl-tags">
+            <span class="nf-cl-tag new">Nové</span>
+            <span class="nf-cl-tag improve">Vylepšení</span>
+          </div>
+          <h2>Analytika, CSAT & webhooky</h2>
+          <ul class="nf-cl-list">
+            <li><i class="fa-solid fa-plus"></i><span>Nová sekce Analytika – bar chart 7 dní, hodinová heatmap, konverzní funnel</span></li>
+            <li><i class="fa-solid fa-plus"></i><span>CSAT hodnocení konverzací (1–5 hvězdiček) pro zákazníky</span></li>
+            <li><i class="fa-solid fa-plus"></i><span>Outbound webhooky – odesílání dat o nových konverzacích na vlastní endpoint</span></li>
+            <li><i class="fa-solid fa-plus"></i><span>Přiřazování konverzací členům týmu</span></li>
+            <li><i class="fa-solid fa-arrow-up"></i><span>Rychlejší načítání inboxu – optimalizace Supabase queries</span></li>
+            <li><i class="fa-solid fa-arrow-up"></i><span>Vylepšená mobilní verze widgetu</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- v1.5 -->
+      <div class="nf-cl-entry">
+        <div class="nf-cl-date-col">
+          <div class="nf-version">v1.5</div>
+          <div class="nf-date">Leden 2026</div>
+        </div>
+        <div class="nf-cl-line"></div>
+        <div class="nf-cl-body">
+          <div class="nf-cl-tags">
+            <span class="nf-cl-tag new">Nové</span>
+            <span class="nf-cl-tag fix">Opravy</span>
+          </div>
+          <h2>Live chat, Slack notifikace & interní poznámky</h2>
+          <ul class="nf-cl-list">
+            <li><i class="fa-solid fa-plus"></i><span>Live chat mód – operátor může přebrat konverzaci od AI v reálném čase</span></li>
+            <li><i class="fa-solid fa-plus"></i><span>Slack integrace – notifikace o nových konverzacích přímo do Slack kanálu</span></li>
+            <li><i class="fa-solid fa-plus"></i><span>Interní poznámky ke konverzacím (viditelné jen pro tým)</span></li>
+            <li><i class="fa-solid fa-plus"></i><span>Štítky konverzací – vlastní kategorizace (Reklamace, Lead, VIP…)</span></li>
+            <li><i class="fa-solid fa-wrench"></i><span>Opraveno: duplicitní zprávy při rychlém odeslání</span></li>
+            <li><i class="fa-solid fa-wrench"></i><span>Opraveno: widget se na některých mobilech nezobrazoval správně</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- v1.4 -->
+      <div class="nf-cl-entry">
+        <div class="nf-cl-date-col">
+          <div class="nf-version">v1.4</div>
+          <div class="nf-date">Prosinec 2025</div>
+        </div>
+        <div class="nf-cl-line"></div>
+        <div class="nf-cl-body">
+          <div class="nf-cl-tags">
+            <span class="nf-cl-tag new">Nové</span>
+            <span class="nf-cl-tag security">Bezpečnost</span>
+          </div>
+          <h2>Multi-tenant architektura & správa týmu</h2>
+          <ul class="nf-cl-list">
+            <li><i class="fa-solid fa-plus"></i><span>Multi-tenant architektura – každý zákazník má izolovaný workspace</span></li>
+            <li><i class="fa-solid fa-plus"></i><span>Správa členů týmu – přidání kolegů s rolemi Admin / Agent</span></li>
+            <li><i class="fa-solid fa-plus"></i><span>Export kontaktů do CSV</span></li>
+            <li><i class="fa-solid fa-plus"></i><span>Vizuální konfigurátor widgetu s live preview</span></li>
+            <li><i class="fa-solid fa-shield"></i><span>Row Level Security (RLS) na všech databázových tabulkách</span></li>
+            <li><i class="fa-solid fa-shield"></i><span>Šifrování webhook signatur hlavičkou X-Nexiflow-Signature</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- v1.3 -->
+      <div class="nf-cl-entry">
+        <div class="nf-cl-date-col">
+          <div class="nf-version">v1.3</div>
+          <div class="nf-date">Prosinec 2025</div>
+        </div>
+        <div class="nf-cl-line"></div>
+        <div class="nf-cl-body">
+          <div class="nf-cl-tags">
+            <span class="nf-cl-tag new">Nové</span>
+            <span class="nf-cl-tag improve">Vylepšení</span>
+          </div>
+          <h2>WordPress plugin & embed průvodce</h2>
+          <ul class="nf-cl-list">
+            <li><i class="fa-solid fa-plus"></i><span>WordPress plugin – instalace chatbotu bez nutnosti editovat kód</span></li>
+            <li><i class="fa-solid fa-plus"></i><span>Embed průvodce v dashboardu – HTML, WordPress, Webflow instrukce na jednom místě</span></li>
+            <li><i class="fa-solid fa-plus"></i><span>Podpora příloh v konverzacích (PDF, obrázky)</span></li>
+            <li><i class="fa-solid fa-arrow-up"></i><span>Rychlejší odpovědi AI – optimalizace Gemini API volání</span></li>
+            <li><i class="fa-solid fa-arrow-up"></i><span>Lepší zpracování češtiny s diakritikou ve znalostní bázi</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- v1.2 -->
+      <div class="nf-cl-entry">
+        <div class="nf-cl-date-col">
+          <div class="nf-version">v1.2</div>
+          <div class="nf-date">Listopad 2025</div>
+        </div>
+        <div class="nf-cl-line"></div>
+        <div class="nf-cl-body">
+          <div class="nf-cl-tags">
+            <span class="nf-cl-tag new">Nové</span>
+          </div>
+          <h2>Znalostní báze & správa konverzací</h2>
+          <ul class="nf-cl-list">
+            <li><i class="fa-solid fa-plus"></i><span>Znalostní báze – přidávání článků, FAQ a dokumentů jako podklad pro AI</span></li>
+            <li><i class="fa-solid fa-plus"></i><span>Konverzační inbox s real-time aktualizacemi (Supabase Realtime)</span></li>
+            <li><i class="fa-solid fa-plus"></i><span>Stavy konverzací: Otevřená / Čekající / Vyřešená</span></li>
+            <li><i class="fa-solid fa-plus"></i><span>Nastavení systémové instrukce (persona bota) přímo v dashboardu</span></li>
+            <li><i class="fa-solid fa-plus"></i><span>Rychlé odpovědi – předdefinované šablony pro časté dotazy</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- v1.0 -->
+      <div class="nf-cl-entry">
+        <div class="nf-cl-date-col">
+          <div class="nf-version">v1.0</div>
+          <div class="nf-date">Listopad 2025</div>
+        </div>
+        <div class="nf-cl-line"></div>
+        <div class="nf-cl-body">
+          <div class="nf-cl-tags">
+            <span class="nf-cl-tag new">Spuštění</span>
+          </div>
+          <h2>🚀 Nexiflow spuštěn</h2>
+          <p>První veřejná verze Nexiflow – AI chatbot platforma pro české weby. Základní funkce při startu:</p>
+          <ul class="nf-cl-list">
+            <li><i class="fa-solid fa-plus"></i><span>Vytváření a správa AI chatbotů v dashboardu</span></li>
+            <li><i class="fa-solid fa-plus"></i><span>JavaScript widget – jeden řádek kódu pro vložení na web</span></li>
+            <li><i class="fa-solid fa-plus"></i><span>Pohání Google Gemini AI</span></li>
+            <li><i class="fa-solid fa-plus"></i><span>Registrace, přihlášení, správa účtu</span></li>
+            <li><i class="fa-solid fa-plus"></i><span>Data uložena v EU (Supabase Frankfurt + Hetzner Německo)</span></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <footer class="cs_footer cs_style_1 cs_type_1 cs_accent_bg cs_bg_filed cs_white_color" data-src="assets/img/footer-bg-2.svg">
+      <div class="cs_height_130 cs_height_lg_80"></div>
+      <div class="container">
+        <div class="cs_footer_top position-relative">
+          <ul class="cs_location_list cs_mp_0">
+            <li><span class="cs_location_icon cs_center cs_theme_color_4 cs_radius_100"><i class="fa-solid fa-envelope"></i></span><a href="mailto:info@nexiflow.cz">info@nexiflow.cz</a></li>
+            <li><span class="cs_location_icon cs_center cs_theme_color_4 cs_radius_100"><i class="fa-solid fa-globe"></i></span><a href="https://dashboard.nexiflow.cz">dashboard.nexiflow.cz</a></li>
+            <li><span class="cs_location_icon cs_center cs_theme_color_4 cs_radius_100"><i class="fa-solid fa-location-dot"></i></span><p class="mb-0">Praha, Česká republika</p></li>
+          </ul>
+        </div>
+        <div class="cs_footer_main">
+          <div class="cs_footer_widget_wrapper">
+            <div class="cs_footer_widget cs_text_widget">
+              <div class="cs_brand cs_mb_32"><img src="assets/img/nexiflow-logo-white.svg" alt="Nexiflow logo"></div>
+              <p class="cs_mb_32">AI chatbot pro váš web. Automatizujte zákaznickou podporu, zachytávejte leady a nikdy nenechte zákazníka bez odpovědi.</p>
+            </div>
+            <div class="cs_footer_widget cs_links_widget">
+              <h3 class="cs_footer_widget_title cs_fs_24 cs_semibold cs_white_color cs_mb_29">Produkt</h3>
+              <ul class="cs_footer_menu cs_mp_0">
+                <li><a href="/#funkce">Funkce</a></li>
+                <li><a href="/pricing">Ceník</a></li>
+                <li><a href="/dokumentace">Dokumentace</a></li>
+                <li><a href="/changelog">Changelog</a></li>
+              </ul>
+            </div>
+            <div class="cs_footer_widget cs_help_widget">
+              <h3 class="cs_footer_widget_title cs_fs_24 cs_semibold cs_white_color cs_mb_29">Firma</h3>
+              <ul class="cs_footer_menu cs_mp_0">
+                <li><a href="/o-nas">O nás</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/obchodni-podminky">Obchodní podmínky</a></li>
+                <li><a href="/ochrana-osobnich-udaju">Ochrana osobních údajů</a></li>
+              </ul>
+            </div>
+            <div class="cs_footer_widget cs_contact_widget">
+              <h3 class="cs_footer_widget_title cs_fs_24 cs_semibold cs_white_color cs_mb_29">Podpora</h3>
+              <ul class="cs_footer_menu cs_mp_0">
+                <li><a href="mailto:info@nexiflow.cz">Centrum podpory</a></li>
+                <li><a href="/#jak-to-funguje">Jak to funguje</a></li>
+                <li><a href="https://dashboard.nexiflow.cz/register">Vyzkoušet demo</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cs_footer_bottom position-relative">
+        <div class="container">
+          <div class="cs_footer_text cs_white_color text-center">Copyright &copy; <span class="cs_getting_year"></span> Nexiflow – produkt <a href="https://webui.cz" style="color:inherit;text-decoration:underline;">WEBUI.CZ</a></div>
+        </div>
+      </div>
+    </footer>
+
+    <button type="button" aria-label="Scrollovat nahoru" class="cs_scrollup cs_purple_bg cs_white_color cs_radius_100">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M0 10L1.7625 11.7625L8.75 4.7875V20H11.25V4.7875L18.225 11.775L20 10L10 0L0 10Z" fill="currentColor"/></svg>
+    </button>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>document.querySelector('.cs_getting_year').textContent = new Date().getFullYear();</script>
+  </body>
+</html>
