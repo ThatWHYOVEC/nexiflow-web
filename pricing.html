@@ -13,57 +13,6 @@
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <style>
-      /* ── Pricing cards ── */
-      .nf-pricing-grid { display: grid; grid-template-columns: repeat(5,1fr); gap: 20px; }
-      @media(max-width:1299px){ .nf-pricing-grid { grid-template-columns: repeat(3,1fr); } }
-      @media(max-width:767px) { .nf-pricing-grid { grid-template-columns: 1fr; } }
-
-      .nf-card {
-        background: #fff;
-        border: 1.5px solid #e8e8f0;
-        border-radius: 20px;
-        padding: 32px 28px 36px;
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        transition: box-shadow .2s;
-      }
-      .nf-card:hover { box-shadow: 0 8px 32px rgba(80,60,160,.10); }
-      .nf-card.active {
-        border-color: var(--accent-color);
-        box-shadow: 0 8px 40px rgba(80,60,160,.18);
-      }
-      .nf-badge {
-        position: absolute;
-        top: 28px; right: 0;
-        background: var(--accent-color);
-        color: #fff;
-        font-size: 11px;
-        font-weight: 700;
-        padding: 5px 18px 5px 26px;
-        border-radius: 4px 0 0 4px;
-        text-transform: uppercase;
-        letter-spacing: .04em;
-      }
-      .nf-plan-name { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
-      .nf-plan-desc { font-size: 14px; color: #888; margin-bottom: 20px; }
-      .nf-price { font-size: 48px; font-weight: 800; line-height: 1; color: var(--heading-color); }
-      .nf-price small { font-size: 15px; font-weight: 500; color: #888; }
-      .nf-price-yearly { display: none; }
-      .nf-saving { font-size: 13px; color: #22c55e; font-weight: 600; margin-top: 4px; min-height: 20px; }
-      .nf-sep { height: 1px; background: #e8e8f0; margin: 22px 0; }
-      .nf-features { list-style: none; padding: 0; margin: 0 0 28px; flex: 1; }
-      .nf-features li { display: flex; align-items: flex-start; gap: 10px; font-size: 14px; color: #444; margin-bottom: 12px; }
-      .nf-features li i { color: var(--accent-color); font-size: 15px; margin-top: 1px; flex-shrink: 0; }
-      .nf-features li.nf-no i { color: #ccc; }
-      .nf-features li.nf-no span { color: #bbb; text-decoration: line-through; }
-
-      /* ── Toggle ── */
-      .nf-toggle-wrap { display: flex; align-items: center; gap: 0; background: #f3f3f8; border-radius: 100px; padding: 4px; width: fit-content; margin: 0 auto 48px; }
-      .nf-toggle-btn { padding: 9px 26px; border-radius: 100px; border: none; background: transparent; font-size: 14px; font-weight: 700; color: #888; cursor: pointer; transition: all .2s; text-transform: uppercase; letter-spacing: .04em; }
-      .nf-toggle-btn.active { background: #fff; color: var(--heading-color); box-shadow: 0 2px 8px rgba(0,0,0,.10); }
-      .nf-save-tag { background: #dcfce7; color: #16a34a; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 100px; margin-left: 6px; }
-
       /* ── Comparison table ── */
       .nf-table-wrap { overflow-x: auto; }
       .nf-compare { width: 100%; border-collapse: collapse; font-size: 14px; }
@@ -144,169 +93,149 @@
       </div>
     </header>
 
-    <!-- Hero mini -->
-    <section class="nf-hero-mini">
-      <div class="container">
-        <div class="nf-label">
-          <img src="assets/img/icons/star-1.svg" alt="" style="width:14px;">
-          Ceník Nexiflow
-        </div>
-        <h1>Vyberte plán pro váš byznys</h1>
-        <p>Začněte zdarma, upgradujte až budete připraveni. Žádné skryté poplatky, žádná kreditní karta.</p>
-      </div>
-    </section>
-
     <!-- Pricing section -->
-    <section style="padding: 64px 0 80px;">
+    <section class="position-relative overflow-hidden" id="pricing-cards">
+      <div class="cs_height_120 cs_height_lg_80"></div>
       <div class="container">
-
-        <!-- Toggle -->
-        <div class="nf-toggle-wrap">
-          <button class="nf-toggle-btn active" id="btnMonthly" onclick="setYearly(false)">Měsíčně</button>
-          <button class="nf-toggle-btn" id="btnYearly" onclick="setYearly(true)">
-            Ročně <span class="nf-save-tag">−20 %</span>
-          </button>
+        <div class="cs_section_heading cs_style_1 cs_center_column cs_mb_60 text-center position-relative z-1">
+          <div class="cs_section_subtitle cs_fs_18 cs_heading_color cs_mb_22">
+            <img src="assets/img/icons/star-1.svg" alt="Star icon">
+            <span>Ceník</span>
+            <img src="assets/img/icons/star-1.svg" alt="Star icon">
+          </div>
+          <h1 class="cs_section_title cs_fs_48 cs_semibold cs_mb_20 text-capitalize wow fadeInUp">Vyberte plán, který<br>vyhovuje vašemu byznysu</h1>
+          <div class="cs_center">
+            <ul class="cs_pricing_control cs_center cs_mp_0 cs_fs_14 cs_bold text-uppercase position-relative">
+              <li class="active"><a href="monthly" aria-label="Měsíční platba">Měsíčně</a></li>
+              <li>
+                <a href="yearly" aria-label="Roční platba">Ročně</a>
+                <div class="cs_offer_info cs_fs_20 cs_heading_color cs_heading_font cs_normal position-absolute">
+                  <span>Ušetřete 20 %</span>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
-
-        <!-- Cards -->
-        <div class="nf-pricing-grid">
+        <div class="row cs_row_gap_30 cs_gap_y_30 position-relative z-1">
 
           <!-- Starter -->
-          <div class="nf-card">
-            <div class="nf-plan-name">Starter</div>
-            <div class="nf-plan-desc">Vyzkoušejte Nexiflow zdarma</div>
-            <div class="nf-price">
-              <span class="nf-price-monthly">0 Kč</span>
-              <span class="nf-price-yearly">0 Kč</span>
-              <small>/měsíc</small>
+          <div class="col-xl-3 col-lg-6">
+            <div class="cs_pricing_table cs_style_2 cs_white_bg cs_radius_20">
+              <div class="cs_pricing_table_heading cs_mb_18">
+                <div>
+                  <h2 class="cs_plan_title cs_fs_24 cs_semibold cs_mb_7">Starter</h2>
+                  <p class="mb-0">Pro začínající weby</p>
+                </div>
+                <div class="cs_price cs_fs_74 cs_semibold cs_heading_color cs_heading_font">
+                  <span class="monthlyPrice">0</span><span class="yearlyPrice">0</span><small style="font-size:18px;"> Kč/měs</small>
+                </div>
+              </div>
+              <div class="cs_separator cs_mb_24"></div>
+              <ul class="cs_pricing_feature_list cs_mp_0 cs_mb_28">
+                <li><span class="cs_feature_icon"><i class="fa-solid fa-circle-check"></i></span><span>1 chatbot</span></li>
+                <li><span class="cs_feature_icon"><i class="fa-solid fa-circle-check"></i></span><span>35 konverzací / měsíc</span></li>
+                <li><span class="cs_feature_icon"><i class="fa-solid fa-circle-check"></i></span><span>Základní analytika</span></li>
+                <li><span class="cs_feature_icon"><i class="fa-solid fa-circle-check"></i></span><span>Embeddable JS widget</span></li>
+                <li><span class="cs_feature_icon"><i class="fa-solid fa-circle-check"></i></span><span>WordPress plugin</span></li>
+                <li><span class="cs_feature_icon"><i class="fa-solid fa-circle-check"></i></span><span>E-mailová podpora</span></li>
+                <li><span class="cs_feature_icon"><i class="fa-solid fa-circle-check"></i></span><span>14 dní Business trial zdarma</span></li>
+              </ul>
+              <a href="https://dashboard.nexiflow.cz/register" aria-label="Začít zdarma" class="cs_btn cs_style_1 cs_center cs_fs_14 cs_bold cs_heading_color text-uppercase text-center">
+                <span>Začít zdarma</span>
+                <span class="cs_btn_icon"><i class="fa-solid fa-arrow-right"></i></span>
+              </a>
             </div>
-            <div class="nf-saving">&nbsp;</div>
-            <div class="nf-sep"></div>
-            <ul class="nf-features">
-              <li><i class="fa-solid fa-circle-check"></i><span>1 chatbot</span></li>
-              <li><i class="fa-solid fa-circle-check"></i><span>35 konverzací / měsíc</span></li>
-              <li><i class="fa-solid fa-circle-check"></i><span>1 člen týmu</span></li>
-              <li><i class="fa-solid fa-circle-check"></i><span>Znalostní báze – 10 článků</span></li>
-              <li><i class="fa-solid fa-circle-check"></i><span>JS widget embed</span></li>
-              <li><i class="fa-solid fa-circle-check"></i><span>WordPress plugin</span></li>
-              <li class="nf-no"><i class="fa-solid fa-circle-xmark"></i><span>Nexiflow branding viditelný</span></li>
-            </ul>
-            <a href="https://dashboard.nexiflow.cz/register" class="cs_btn cs_style_1 cs_bg_1 cs_center cs_fs_14 cs_bold cs_white_color text-uppercase text-center">
-              <span>Začít zdarma</span>
-              <span class="cs_btn_icon"><i class="fa-solid fa-arrow-right"></i></span>
-            </a>
-          </div>
-
-          <!-- Solo -->
-          <div class="nf-card">
-            <div class="nf-plan-name">Solo</div>
-            <div class="nf-plan-desc">Pro freelancery a soloprenery</div>
-            <div class="nf-price">
-              <span class="nf-price-monthly">290 Kč</span>
-              <span class="nf-price-yearly">239 Kč</span>
-              <small>/měsíc</small>
-            </div>
-            <div class="nf-saving nf-saving-yearly" style="display:none;">Ušetříte 612 Kč ročně</div>
-            <div class="nf-saving nf-saving-monthly">&nbsp;</div>
-            <div class="nf-sep"></div>
-            <ul class="nf-features">
-              <li><i class="fa-solid fa-circle-check"></i><span>Vše ze Starter +</span></li>
-              <li><i class="fa-solid fa-circle-check"></i><span>300 konverzací / měsíc</span></li>
-              <li><i class="fa-solid fa-circle-check"></i><span>50 článků ve znalostní bázi</span></li>
-              <li><i class="fa-solid fa-circle-check"></i><span>File přílohy</span></li>
-              <li><i class="fa-solid fa-circle-check"></i><span><strong>Bez Nexiflow brandingu</strong></span></li>
-              <li class="nf-no"><i class="fa-solid fa-circle-xmark"></i><span>Tým (pouze 1 uživatel)</span></li>
-              <li class="nf-no"><i class="fa-solid fa-circle-xmark"></i><span>Analytika / Webhooky</span></li>
-            </ul>
-            <a href="https://dashboard.nexiflow.cz/register" class="cs_btn cs_style_1 cs_bg_1 cs_center cs_fs_14 cs_bold cs_white_color text-uppercase text-center">
-              <span>Vybrat Solo</span>
-              <span class="cs_btn_icon"><i class="fa-solid fa-arrow-right"></i></span>
-            </a>
           </div>
 
           <!-- Team -->
-          <div class="nf-card">
-            <div class="nf-plan-name">Team</div>
-            <div class="nf-plan-desc">Pro malé týmy a agentury</div>
-            <div class="nf-price">
-              <span class="nf-price-monthly">599 Kč</span>
-              <span class="nf-price-yearly">479 Kč</span>
-              <small>/měsíc</small>
+          <div class="col-xl-3 col-lg-6">
+            <div class="cs_pricing_table cs_style_2 cs_white_bg cs_radius_20">
+              <div class="cs_pricing_table_heading cs_mb_18">
+                <div>
+                  <h2 class="cs_plan_title cs_fs_24 cs_semibold cs_mb_7">Team</h2>
+                  <p class="mb-0">Pro malé týmy</p>
+                </div>
+                <div class="cs_price cs_fs_74 cs_semibold cs_heading_color cs_heading_font">
+                  <span class="monthlyPrice">599</span><span class="yearlyPrice">479</span><small style="font-size:18px;"> Kč/měs</small>
+                </div>
+              </div>
+              <div class="cs_separator cs_mb_24"></div>
+              <ul class="cs_pricing_feature_list cs_mp_0 cs_mb_28">
+                <li><span class="cs_feature_icon"><i class="fa-solid fa-circle-check"></i></span><span>Vše ze Starter +</span></li>
+                <li><span class="cs_feature_icon"><i class="fa-solid fa-circle-check"></i></span><span>2 chatboti</span></li>
+                <li><span class="cs_feature_icon"><i class="fa-solid fa-circle-check"></i></span><span>500 konverzací / měsíc</span></li>
+                <li><span class="cs_feature_icon"><i class="fa-solid fa-circle-check"></i></span><span>Live chat přebírání</span></li>
+                <li><span class="cs_feature_icon"><i class="fa-solid fa-circle-check"></i></span><span>Slack notifikace</span></li>
+                <li><span class="cs_feature_icon"><i class="fa-solid fa-circle-check"></i></span><span>Interní poznámky</span></li>
+                <li><span class="cs_feature_icon"><i class="fa-solid fa-circle-check"></i></span><span>E-mailová podpora</span></li>
+              </ul>
+              <a href="https://dashboard.nexiflow.cz/register" aria-label="Vybrat Team" class="cs_btn cs_style_1 cs_center cs_fs_14 cs_bold cs_heading_color text-uppercase text-center">
+                <span>Vybrat Team</span>
+                <span class="cs_btn_icon"><i class="fa-solid fa-arrow-right"></i></span>
+              </a>
             </div>
-            <div class="nf-saving nf-saving-yearly" style="display:none;">Ušetříte 1 440 Kč ročně</div>
-            <div class="nf-saving nf-saving-monthly">&nbsp;</div>
-            <div class="nf-sep"></div>
-            <ul class="nf-features">
-              <li><i class="fa-solid fa-circle-check"></i><span>Vše ze Solo +</span></li>
-              <li><i class="fa-solid fa-circle-check"></i><span>3 chatboti</span></li>
-              <li><i class="fa-solid fa-circle-check"></i><span>500 konverzací / měsíc</span></li>
-              <li><i class="fa-solid fa-circle-check"></i><span>3 členové týmu</span></li>
-              <li><i class="fa-solid fa-circle-check"></i><span>150 článků ve znalostní bázi</span></li>
-              <li><i class="fa-solid fa-circle-check"></i><span>Live chat přebírání</span></li>
-              <li><i class="fa-solid fa-circle-check"></i><span>Slack notifikace</span></li>
-            </ul>
-            <a href="https://dashboard.nexiflow.cz/register" class="cs_btn cs_style_1 cs_bg_1 cs_center cs_fs_14 cs_bold cs_white_color text-uppercase text-center">
-              <span>Vyzkoušet Team</span>
-              <span class="cs_btn_icon"><i class="fa-solid fa-arrow-right"></i></span>
-            </a>
           </div>
 
           <!-- Business (highlighted) -->
-          <div class="nf-card active">
-            <div class="nf-badge">Nejoblíbenější</div>
-            <div class="nf-plan-name">Business</div>
-            <div class="nf-plan-desc">Pro rostoucí firmy</div>
-            <div class="nf-price">
-              <span class="nf-price-monthly">1 349 Kč</span>
-              <span class="nf-price-yearly">1 079 Kč</span>
-              <small>/měsíc</small>
+          <div class="col-xl-3 col-lg-6">
+            <div class="cs_pricing_table cs_style_2 cs_white_bg cs_radius_20 position-relative active">
+              <div class="cs_pricing_table_heading cs_mb_18 position-relative z-1">
+                <div>
+                  <h2 class="cs_plan_title cs_fs_24 cs_semibold cs_mb_7">Business</h2>
+                  <p class="mb-0">Pro rostoucí firmy</p>
+                </div>
+                <div class="cs_price cs_fs_74 cs_semibold cs_heading_color cs_heading_font">
+                  <span class="monthlyPrice">1 349</span><span class="yearlyPrice">1 079</span><small style="font-size:18px;"> Kč/měs</small>
+                </div>
+              </div>
+              <div class="cs_pricing_badge cs_heading_color cs_medium cs_theme_bg_4 text-center">Nejoblíbenější</div>
+              <div class="cs_separator cs_mb_24"></div>
+              <ul class="cs_pricing_feature_list cs_mp_0 cs_mb_28">
+                <li><span class="cs_feature_icon"><i class="fa-solid fa-circle-check"></i></span><span>Vše z Team +</span></li>
+                <li><span class="cs_feature_icon"><i class="fa-solid fa-circle-check"></i></span><span>5 chatbotů</span></li>
+                <li><span class="cs_feature_icon"><i class="fa-solid fa-circle-check"></i></span><span>2 000 konverzací / měsíc</span></li>
+                <li><span class="cs_feature_icon"><i class="fa-solid fa-circle-check"></i></span><span>Pokročilá analytika a CSAT</span></li>
+                <li><span class="cs_feature_icon"><i class="fa-solid fa-circle-check"></i></span><span>Webhooky a outbound integrace</span></li>
+                <li><span class="cs_feature_icon"><i class="fa-solid fa-circle-check"></i></span><span>Přiřazování konverzací týmu</span></li>
+                <li><span class="cs_feature_icon"><i class="fa-solid fa-circle-check"></i></span><span>Prioritní česká podpora</span></li>
+              </ul>
+              <a href="https://dashboard.nexiflow.cz/register" aria-label="Vyzkoušet Business" class="cs_btn cs_style_1 cs_center cs_fs_14 cs_bold cs_heading_color text-uppercase text-center">
+                <span>Vyzkoušet 14 dní zdarma</span>
+                <span class="cs_btn_icon"><i class="fa-solid fa-arrow-right"></i></span>
+              </a>
             </div>
-            <div class="nf-saving nf-saving-yearly" style="display:none;">Ušetříte 3 240 Kč ročně</div>
-            <div class="nf-saving nf-saving-monthly">&nbsp;</div>
-            <div class="nf-sep"></div>
-            <ul class="nf-features">
-              <li><i class="fa-solid fa-circle-check"></i><span>Vše z Team +</span></li>
-              <li><i class="fa-solid fa-circle-check"></i><span>10 chatbotů</span></li>
-              <li><i class="fa-solid fa-circle-check"></i><span>2 500 konverzací / měsíc</span></li>
-              <li><i class="fa-solid fa-circle-check"></i><span>10 členů týmu</span></li>
-              <li><i class="fa-solid fa-circle-check"></i><span>Neomezená znalostní báze</span></li>
-              <li><i class="fa-solid fa-circle-check"></i><span>Pokročilá analytika + CSAT</span></li>
-              <li><i class="fa-solid fa-circle-check"></i><span>Outbound webhooky</span></li>
-            </ul>
-            <a href="https://dashboard.nexiflow.cz/register" class="cs_btn cs_style_1 cs_bg_1 cs_center cs_fs_14 cs_bold cs_white_color text-uppercase text-center">
-              <span>Vyzkoušet 14 dní zdarma</span>
-              <span class="cs_btn_icon"><i class="fa-solid fa-arrow-right"></i></span>
-            </a>
           </div>
 
           <!-- Enterprise -->
-          <div class="nf-card">
-            <div class="nf-plan-name">Enterprise</div>
-            <div class="nf-plan-desc">Pro velké organizace</div>
-            <div class="nf-price">
-              <span class="nf-price-monthly">2 990 Kč</span>
-              <span class="nf-price-yearly">2 390 Kč</span>
-              <small>/měsíc</small>
+          <div class="col-xl-3 col-lg-6">
+            <div class="cs_pricing_table cs_style_2 cs_white_bg cs_radius_20">
+              <div class="cs_pricing_table_heading cs_mb_18">
+                <div>
+                  <h2 class="cs_plan_title cs_fs_24 cs_semibold cs_mb_7">Enterprise</h2>
+                  <p class="mb-0">Pro velké organizace</p>
+                </div>
+                <div class="cs_price cs_fs_74 cs_semibold cs_heading_color cs_heading_font">
+                  <span class="monthlyPrice">2 990</span><span class="yearlyPrice">2 390</span><small style="font-size:18px;"> Kč/měs</small>
+                </div>
+              </div>
+              <div class="cs_separator cs_mb_24"></div>
+              <ul class="cs_pricing_feature_list cs_mp_0 cs_mb_28">
+                <li><span class="cs_feature_icon"><i class="fa-solid fa-circle-check"></i></span><span>Vše z Business +</span></li>
+                <li><span class="cs_feature_icon"><i class="fa-solid fa-circle-check"></i></span><span>Neomezené chatboty</span></li>
+                <li><span class="cs_feature_icon"><i class="fa-solid fa-circle-check"></i></span><span>Neomezené konverzace</span></li>
+                <li><span class="cs_feature_icon"><i class="fa-solid fa-circle-check"></i></span><span>Vlastní doména widgetu</span></li>
+                <li><span class="cs_feature_icon"><i class="fa-solid fa-circle-check"></i></span><span>SLA podpora a dohoda</span></li>
+                <li><span class="cs_feature_icon"><i class="fa-solid fa-circle-check"></i></span><span>Dedikovaný account manager</span></li>
+                <li><span class="cs_feature_icon"><i class="fa-solid fa-circle-check"></i></span><span>Přístup k API</span></li>
+              </ul>
+              <a href="mailto:info@nexiflow.cz" aria-label="Kontaktovat obchod" class="cs_btn cs_style_1 cs_center cs_fs_14 cs_bold cs_heading_color text-uppercase text-center">
+                <span>Kontaktovat obchod</span>
+                <span class="cs_btn_icon"><i class="fa-solid fa-arrow-right"></i></span>
+              </a>
             </div>
-            <div class="nf-saving nf-saving-yearly" style="display:none;">Ušetříte 7 200 Kč ročně</div>
-            <div class="nf-saving nf-saving-monthly">&nbsp;</div>
-            <div class="nf-sep"></div>
-            <ul class="nf-features">
-              <li><i class="fa-solid fa-circle-check"></i><span>Vše z Business +</span></li>
-              <li><i class="fa-solid fa-circle-check"></i><span>Neomezené chatboty</span></li>
-              <li><i class="fa-solid fa-circle-check"></i><span>10 000+ konverzací / měsíc</span></li>
-              <li><i class="fa-solid fa-circle-check"></i><span>Neomezený tým</span></li>
-              <li><i class="fa-solid fa-circle-check"></i><span>SLA &amp; dedikovaná podpora</span></li>
-              <li><i class="fa-solid fa-circle-check"></i><span>Přístup k API</span></li>
-              <li><i class="fa-solid fa-circle-check"></i><span>Vlastní onboarding</span></li>
-            </ul>
-            <a href="mailto:info@nexiflow.cz?subject=Nexiflow Enterprise" class="cs_btn cs_style_1 cs_bg_1 cs_center cs_fs_14 cs_bold cs_white_color text-uppercase text-center">
-              <span>Kontaktovat obchod</span>
-              <span class="cs_btn_icon"><i class="fa-solid fa-arrow-right"></i></span>
-            </a>
           </div>
 
-        </div><!-- /grid -->
+        </div><!-- /row -->
 
         <!-- Trust badges -->
         <div class="text-center mt-4 d-flex align-items-center justify-content-center gap-4 flex-wrap" style="font-size:14px;color:#888;">
@@ -551,16 +480,6 @@
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script>
-      function setYearly(isYearly) {
-        document.getElementById('btnMonthly').classList.toggle('active', !isYearly);
-        document.getElementById('btnYearly').classList.toggle('active', isYearly);
-        document.querySelectorAll('.nf-price-monthly').forEach(el => el.style.display = isYearly ? 'none' : 'inline');
-        document.querySelectorAll('.nf-price-yearly').forEach(el => el.style.display = isYearly ? 'inline' : 'none');
-        document.querySelectorAll('.nf-saving-yearly').forEach(el => el.style.display = isYearly ? 'block' : 'none');
-        document.querySelectorAll('.nf-saving-monthly').forEach(el => el.style.display = isYearly ? 'none' : 'block');
-      }
-      // Init — hide yearly prices
-      document.querySelectorAll('.nf-price-yearly').forEach(el => el.style.display = 'none');
 
       function toggleFaq(el) {
         el.closest('.nf-faq-item').classList.toggle('open');
