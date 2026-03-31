@@ -1,0 +1,665 @@
+<!doctype html>
+<html class="no-js" lang="cs">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Kontakt – Nexiflow</title>
+    <meta name="author" content="Nexiflow">
+    <meta name="description" content="Kontaktujte Nexiflow – AI chatbot pro váš web. Napište nám nebo si zarezervujte 10min call zdarma.">
+    <meta name="keywords" content="Nexiflow, kontakt, AI chatbot, zákaznická podpora">
+    <meta name="robots" content="INDEX,FOLLOW">
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/img/nexiflow-logo-icon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/nexiflow-logo-icon.svg">
+    <meta name="theme-color" content="#013228">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PLXENR6WET"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-PLXENR6WET');
+    </script>
+
+    <!--==============================
+      Google Fonts
+    ============================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&family=Urbanist:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!--==============================
+        All CSS File
+    ============================== -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Fontawesome Icon -->
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+    <!-- Swiper Slider -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!-- Theme Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Nexiflow Color Override -->
+    <style>
+    /* ══ Nexiflow brand palette ══
+       Primary green: #013228
+       Accent green:  #059669
+       Black:         #17191a
+       White:         #ffffff
+       No other colors allowed.
+    ══════════════════════════════ */
+
+    /* Override body.theme which has higher specificity than :root */
+    body.theme,
+    :root {
+        --theme-color: #013228 !important;
+        --theme-color2: #059669 !important;
+        --title-color: #17191a !important;
+        --body-color: #484848;
+        --smoke-color: #e6e6e6;
+        --smoke-color2: #f5f5f5;
+        --smoke-color3: #e8f5e9;
+        --smoke-color4: #f0fdf4;
+        --black-color: #17191a;
+        --black-color2: #17191a;
+    }
+
+    /* ── Buttons: green bg + white text ── */
+    .th-btn, .th-btn2 {
+        background-color: #013228 !important;
+        border-color: #013228 !important;
+        color: #fff !important;
+    }
+    .th-btn:hover, .th-btn2:hover {
+        background-color: #059669 !important;
+        border-color: #059669 !important;
+        color: #fff !important;
+    }
+    .th-btn2.style2 {
+        background: transparent !important;
+        border-color: rgba(255,255,255,0.35) !important;
+        color: #fff !important;
+    }
+    .th-btn2.style2:hover {
+        background: #059669 !important;
+        border-color: #059669 !important;
+        color: #fff !important;
+    }
+    .th-btn2.style3 {
+        background: #fff !important;
+        border-color: #fff !important;
+        color: #013228 !important;
+    }
+    .th-btn2.style3:hover {
+        background: #059669 !important;
+        border-color: #059669 !important;
+        color: #fff !important;
+    }
+    .th-btn2.fw-btn {
+        background-color: #013228 !important;
+        border-color: #013228 !important;
+        color: #fff !important;
+    }
+    .th-btn2.fw-btn:hover {
+        background-color: #059669 !important;
+        border-color: #059669 !important;
+        color: #fff !important;
+    }
+
+    /* ── Text helpers ── */
+    .text-theme { color: #059669 !important; }
+    .sub-title.style3 { color: #059669 !important; }
+    a:hover { color: #059669; }
+
+    /* ── Hero ── */
+    .hero-2,
+    .th-hero-wrapper.hero-2 { background-color: #013228 !important; }
+
+    /* ── CTA ── */
+    .cta-area3 { background-color: #013228 !important; }
+
+    /* ── Footer ── */
+    .footer-layout2 { background-color: #17191a !important; }
+    .footer-top { border-color: rgba(255,255,255,0.1) !important; }
+    .footer-layout2 .th-social a:hover { background-color: #059669 !important; }
+
+    /* ── Pricing ── */
+    .price-card {
+        border: 2px solid #059669 !important;
+        background: #f0fdf4 !important;
+    }
+    .price-card .box-price { color: #17191a; }
+    .price-card .available-list li::before { color: #059669; }
+    .offer-tag { background-color: #C6A572 !important; color: #fff !important; }
+    .offer-tag img { filter: brightness(10); }
+    .pricing-tabs .switch-area .toggler.toggler--is-active,
+    .pricing-tabs .switch-area .toggler:hover { color: #013228 !important; }
+    .pricing-tabs .toggle .b.switch { background-color: #013228 !important; }
+
+    /* Business + Lifetime: full green highlight */
+    .price-card.highlight-green {
+        background: #013228 !important;
+        border-color: #013228 !important;
+    }
+    .price-card.highlight-green .box-title,
+    .price-card.highlight-green .box-price,
+    .price-card.highlight-green .box-price .dollar,
+    .price-card.highlight-green .box-price .duration,
+    .price-card.highlight-green .subtitle,
+    .price-card.highlight-green .available-list li {
+        color: #fff !important;
+    }
+    .price-card.highlight-green .available-list li::before {
+        color: #C6A572 !important;
+    }
+    .price-card.highlight-green .available-list li {
+        color: rgba(255,255,255,0.9) !important;
+    }
+    /* Zlaté checkmarky v zelených kartách */
+    .price-card.highlight-green .available-list ul li::after,
+    .price-card.highlight-green .available-list li::after,
+    .price-card.highlight-green .available-list li:after {
+        color: #C6A572 !important;
+        -webkit-text-fill-color: #C6A572 !important;
+    }
+    /* Zlatý badge text */
+    .price-card.highlight-green .offer-tag {
+        background: #C6A572 !important;
+        color: #fff !important;
+    }
+    /* Zlatý subtitle v zelených kartách */
+    .price-card.highlight-green .subtitle {
+        color: #C6A572 !important;
+    }
+    /* Zlatá cena v zelených kartách */
+    .price-card.highlight-green .box-price {
+        color: #C6A572 !important;
+    }
+    .price-card.highlight-green .box-price .duration {
+        color: rgba(255,255,255,0.6) !important;
+    }
+    .price-card.highlight-green .th-btn2.fw-btn {
+        background: #059669 !important;
+        border-color: #059669 !important;
+        color: #fff !important;
+    }
+    .price-card.highlight-green .th-btn2.fw-btn:hover {
+        background: #fff !important;
+        color: #013228 !important;
+    }
+    .price-card.highlight-green .offer-tag {
+        background: #C6A572 !important;
+        color: #fff !important;
+    }
+    .price-card.highlight-green .lifetime-badge {
+        background: linear-gradient(135deg, #C6A572, #d4b896);
+        color: #fff;
+    }
+    .lifetime-badge {
+        display: inline-block;
+        background: linear-gradient(135deg, #C6A572, #d4b896);
+        color: #fff;
+        font-size: 11px;
+        font-weight: 700;
+        padding: 4px 12px;
+        border-radius: 20px;
+        margin-top: 8px;
+        letter-spacing: 0.03em;
+    }
+
+    /* ── Process steps ── */
+    .process-card .number { color: #059669 !important; }
+    .process-card:hover { border-color: #013228 !important; }
+    .process-line { border-color: #e6e6e6; }
+
+    /* ── Feature boxes ── */
+    .feature-box { border: 1px solid #e6e6e6; }
+    .feature-box:hover { border-color: #013228 !important; }
+
+    /* ── Service / case study ── */
+    .service-box .box-icon {
+        background-color: transparent !important;
+    }
+    .service-box .box-icon img {
+        filter: invert(27%) sepia(89%) saturate(1090%) hue-rotate(131deg) brightness(93%) contrast(96%);
+    }
+    .icon-btn .icon { background-color: #f5f5f5; }
+    .icon-btn:hover .icon { background-color: #013228 !important; }
+    .icon-btn:hover .icon img { filter: brightness(10); }
+
+    /* ── FAQ ── */
+    .faq-card { border: 1px solid #e6e6e6; }
+    .faq-card .box-title { color: #17191a; }
+
+    /* ── Testimonials ── */
+    .testi-box .rating i { color: #059669 !important; }
+    .client-review i { color: #059669 !important; }
+
+    /* ── Integration ── */
+    .integration-icon { border-color: #e6e6e6 !important; }
+    .integration-icon:hover { border-color: #013228 !important; }
+
+    /* ── Blog ── */
+    .blog-card .box-title a:hover { color: #059669 !important; }
+
+    /* ── Scroll top ── */
+    .scroll-top svg path { stroke: #059669; }
+
+    /* ── Swiper ── */
+    .swiper-pagination-progressbar-fill { background: #013228 !important; }
+    .slider-arrow:hover { background-color: #013228 !important; color: #fff !important; }
+    .slider-arrow:hover img { filter: brightness(10); }
+
+    /* ── Misc ── */
+    ::selection { background: #059669; color: #fff; }
+    .mouseCursor.cursor-inner { background-color: #013228; }
+
+    /* ── Hero second button: outline white ── */
+    .hero-style2 .btn-group .th-btn2.style2 {
+        background: transparent !important;
+        border: 2px solid rgba(255,255,255,0.4) !important;
+        color: #fff !important;
+    }
+    .hero-style2 .btn-group .th-btn2.style2:hover {
+        background: #059669 !important;
+        border-color: #059669 !important;
+        color: #fff !important;
+    }
+
+    /* ── Pricing toggle: selected state white text ── */
+    .pricing-tabs .switch-area .toggler.toggler--is-active {
+        color: #fff !important;
+    }
+    .pricing-tabs .toggle .check:checked + .b.switch {
+        background-color: #013228 !important;
+    }
+    .pricing-tabs .switch-area .toggler {
+        color: #484848;
+    }
+
+    /* ── Pricing cards same height ── */
+    .price-card_wrapp {
+        display: flex;
+    }
+    .price-card {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .price-card .available-list {
+        flex: 1;
+    }
+    .price-card .btn-group {
+        margin-top: auto;
+    }
+
+    /* ── Copyright bar ── */
+    .footer-layout2 .copyright-wrap {
+        padding: 30px 0 !important;
+        position: relative;
+    }
+    .footer-layout2 .copyright-text {
+        position: absolute;
+        bottom: -6px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: auto !important;
+        max-width: 90vw;
+        padding: 12px 60px !important;
+        white-space: nowrap;
+        font-size: 14px;
+        text-align: center;
+        background-color: #fff;
+        border-radius: 20px 20px 0 0;
+        color: #484848;
+    }
+
+    /* ── Logo sizing ── */
+    .header-logo img {
+        max-height: 40px;
+        width: auto;
+    }
+    .mobile-logo img {
+        max-height: 36px;
+        width: auto;
+    }
+    .footer-logo img {
+        max-height: 44px;
+        width: auto;
+    }
+    </style>
+
+</head>
+
+<body class="theme">
+
+
+    <!--[if lte IE 9]>
+    	<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+    <!--********************************
+   		Code Start From Here
+	******************************** -->
+
+    <div class="mouseCursor cursor-outer"></div>
+    <div class="mouseCursor cursor-inner"></div>
+
+    <!--==============================
+    Mobile Menu
+  ============================== -->
+    <div class="th-menu-wrapper">
+        <div class="th-menu-area text-center">
+            <button class="th-menu-toggle"><i class="fal fa-times"></i></button>
+            <div class="mobile-logo">
+                <a href="/"><img src="assets/img/logo-header.svg" alt="Nexiflow" width="160" height="36"></a>
+            </div>
+
+            <div class="th-mobile-menu">
+                <ul>
+                    <li><a href="/#features-sec">Funkce</a></li>
+                    <li><a href="/#process-sec">Jak to funguje</a></li>
+                    <li><a href="/cenik">Ceník</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="https://help.nexiflow.cz">Dokumentace</a></li>
+                    <li><a href="/kontakt">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </div><!--==============================
+	Header Area
+==============================-->
+    <header class="th-header header-layout2 header-absolute">
+        <div class="sticky-wrapper">
+            <!-- Main Menu Area -->
+            <div class="menu-area">
+                <div class="container th-container">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-auto">
+                            <div class="header-logo">
+                                <a href="/"><img src="assets/img/logo-header.svg" alt="Nexiflow" width="180" height="40"></a>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <nav class="main-menu style2 d-none d-lg-inline-block">
+                                <ul>
+                                    <li><a href="/#features-sec">Funkce</a></li>
+                                    <li><a href="/#process-sec">Jak to funguje</a></li>
+                                    <li><a href="/cenik">Ceník</a></li>
+                                    <li><a href="/blog">Blog</a></li>
+                                    <li><a href="https://help.nexiflow.cz">Dokumentace</a></li>
+                                    <li><a href="/kontakt">Kontakt</a></li>
+                                </ul>
+                            </nav>
+                            <div class="header-button">
+                                <button type="button" class="th-menu-toggle d-inline-block d-lg-none"><i class="far fa-bars"></i></button>
+                            </div>
+                        </div>
+                        <div class="col-auto d-none d-xl-block">
+                            <div class="header-button">
+                                <a href="https://app.nexiflow.cz" class="th-btn2 style2">Přihlásit se <img src="assets/img/icon/user.svg" alt=""></a>
+                                <a href="https://app.nexiflow.cz" class="th-btn2 d-none d-xxl-block">Vyzkoušet zdarma</a>
+                                <button type="button" class="th-menu-toggle d-inline-block d-xl-none"><i class="far fa-bars"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header><!--==============================
+    Breadcrumb
+============================== -->
+    <div class="breadcumb-wrapper" data-bg-src="assets/img/bg/breadcumb-bg.jpg">
+        <div class="container">
+            <div class="breadcumb-content">
+                <h1 class="breadcumb-title text-anime-style-3">Kontakt</h1>
+                <ul class="breadcumb-menu wow fadeInUp">
+                    <li><a href="/">Domů</a></li>
+                    <li>Kontakt</li>
+                </ul>
+            </div>
+        </div>
+    </div><!--==============================
+Contact Info Area
+==============================-->
+    <div class="space overflow-hidden">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-xl-4 col-md-6">
+                    <div class="contact-media">
+                        <div class="icon-btn">
+                            <i class="fa-sharp fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="media-body">
+                            <h2 class="box-title">E-mail</h2>
+                            <p class="box-text">
+                                <a href="mailto:info@nexiflow.cz">info@nexiflow.cz</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="contact-media">
+                        <div class="icon-btn">
+                            <i class="fa-sharp fa-solid fa-headset"></i>
+                        </div>
+                        <div class="media-body">
+                            <h2 class="box-title">Podpora</h2>
+                            <p class="box-text">
+                                <a href="mailto:podpora@nexiflow.cz">podpora@nexiflow.cz</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="contact-media">
+                        <div class="icon-btn">
+                            <i class="fa-sharp fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="media-body">
+                            <h2 class="box-title">Sídlo</h2>
+                            <p class="box-text">Praha, Česká republika</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--==============================
+Calendly Section
+==============================-->
+    <section class="space overflow-hidden" style="background:#f5f5f5;">
+        <div class="container">
+            <div class="title-area text-center">
+                <h2 class="sec-title text-anime-style-3">Rezervujte si 10min call zdarma</h2>
+                <p class="sec-text">Ukážeme vám, jak Nexiflow nastavit pro váš web — živě, za 10 minut.</p>
+            </div>
+            <div class="calendly-inline-widget" data-url="https://calendly.com/nexiflow-info/10?hide_gdpr_banner=1&primary_color=013228" style="min-width:320px;max-width:900px;height:700px;border-radius:16px;overflow:hidden;box-shadow:0 4px 32px rgba(0,0,0,0.08);margin:0 auto;"></div>
+            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+        </div>
+    </section><!--==============================
+Contact Form Area
+==============================-->
+    <section class="contact-sec space overflow-hidden" id="contact-sec">
+        <div class="container">
+            <div class="contact-area">
+                <div class="row gy-40 justify-content-center">
+                    <div class="col-xl-8">
+                        <form action="mail.php" method="POST" class="contact-form ajax-contact">
+                            <h3 class="title">Napište nám</h3>
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <input type="text" class="form-control" name="name" id="name" placeholder="Jméno" required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input type="email" class="form-control" name="email" id="email" placeholder="E-mail" required>
+                                </div>
+                                <div class="form-group col-12">
+                                    <textarea name="message" id="message" cols="30" rows="5" class="form-control" placeholder="Zpráva" required></textarea>
+                                </div>
+                                <div class="form-btn col-12">
+                                    <button class="th-btn">Odeslat zprávu <span class="icon"><img src="assets/img/icon/arrow-right.svg" alt=""></span></button>
+                                </div>
+                            </div>
+                            <p class="form-messages mb-0 mt-3"></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!--==============================
+	Footer Area
+==============================-->
+    <footer class="footer-wrapper footer-layout2" data-bg-src="assets/img/bg/footer_bg_2.png">
+        <div class="container">
+            <div class="widget-area">
+                <div class="footer-top ">
+                    <div class="row gx-40 gy-4 justify-content-center justify-content-lg-between">
+                        <div class="col-lg-5 col-xl-4">
+                            <div class="footer-logo"><img src="assets/img/logo-footer-white.svg" alt="Nexiflow" width="200" height="44"></div>
+                        </div>
+                        <div class="col-lg-6 col-xl-5">
+                            <div class="ps-xl-5">
+                                <h2 class="box-title text-white">Vyzkoušejte Nexiflow zdarma</h2>
+                                <div class="btn-group justify-content-center justify-content-lg-start">
+                                    <a href="https://app.nexiflow.cz" class="th-btn2">Vyzkoušet zdarma</a>
+                                    <a href="/kontakt" class="th-btn2 style3">Zarezervovat demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row gy-4 justify-content-between">
+                <div class="col-md-6 col-xl-3">
+                    <div class="widget footer-widget">
+                        <h3 class="widget_title">[ O nás ]</h3>
+                        <div class="th-widget-about">
+                            <p class="about-text">Nexiflow je AI chatbot platforma pro firmy, které chtějí automatizovat zákaznickou podporu a nikdy nenechat zákazníka bez odpovědi.</p>
+                            <div class="th-social">
+                                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.youtube.com/"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-auto">
+                    <div class="widget widget_nav_menu footer-widget">
+                        <h3 class="widget_title">[ Produkt ]</h3>
+                        <div class="menu-all-pages-container">
+                            <ul class="menu">
+                                <li><a href="/#features-sec">Funkce</a></li>
+                                <li><a href="/cenik">Ceník</a></li>
+                                <li><a href="/blog">Blog</a></li>
+                                <li><a href="https://help.nexiflow.cz">Dokumentace</a></li>
+                                <li><a href="https://app.nexiflow.cz">Přihlásit se</a></li>
+                                <li><a href="https://app.nexiflow.cz">Začít zdarma</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-auto">
+                    <div class="widget widget_nav_menu footer-widget">
+                        <h3 class="widget_title">[ Firma ]</h3>
+                        <div class="menu-all-pages-container">
+                            <ul class="menu">
+                                <li><a href="#">O nás</a></li>
+                                <li><a href="#">Changelog</a></li>
+                                <li><a href="/kontakt">Kontakt</a></li>
+                                <li><a href="#">Obchodní podmínky</a></li>
+                                <li><a href="#">Ochrana osobních údajů</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-auto">
+                    <div class="widget widget_nav_menu footer-widget">
+                        <h3 class="widget_title">[ Funkce ]</h3>
+                        <div class="menu-all-pages-container">
+                            <ul class="menu">
+                                <li><a href="#">Analytika v reálném čase</a></li>
+                                <li><a href="#">E-shop integrace</a></li>
+                                <li><a href="#">Automatizace</a></li>
+                                <li><a href="#">Česká podpora</a></li>
+                                <li><a href="#">Export dat</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <div class="copyright-wrap">
+                <div class="row gy-2 align-items-center justify-content-between">
+                    <p class="copyright-text"><i class="fal fa-copyright"></i> Copyright <a href="https://webui.cz">Nexiflow</a> 2026 – produkt WEBUI.CZ. Všechna práva vyhrazena.</p>
+
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--********************************
+			Code End  Here
+	******************************** -->
+    <!-- Scroll To Top -->
+    <div class="scroll-top">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;">
+            </path>
+        </svg>
+    </div>
+
+    <!--==============================
+    All Js File
+============================== -->
+    <!-- Jquery -->
+    <script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
+    <!-- Swiper Slider -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Magnific Popup -->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- Counter Up -->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <!-- Circle Progress -->
+    <script src="assets/js/circle-progress.js"></script>
+    <!-- Range Slider -->
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <!-- Imagesloadedr -->
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <!-- isotope -->
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <!-- Nice-select -->
+    <script src="assets/js/nice-select.min.js"></script>
+    <!-- wow -->
+    <script src="assets/js/wow.min.js"></script>
+    <!-- gsap area start -->
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <script src="assets/js/SplitText.js"></script>
+    <script src="assets/js/DrawSVGPlugin3.min.js"></script>
+    <!-- gsap area end -->
+    <!-- Lenis Js -->
+    <script src="assets/js/lenis.min.js"></script>
+
+    <!-- Main Js File -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

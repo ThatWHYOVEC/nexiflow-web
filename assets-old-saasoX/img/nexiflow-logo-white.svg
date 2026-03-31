@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 40" width="180" height="40">
+  <rect x="0" y="4" width="32" height="26" rx="6" fill="white" opacity="0.9"/>
+  <rect x="4" y="10" width="14" height="3" rx="1.5" fill="#6366f1"/>
+  <rect x="4" y="16" width="20" height="3" rx="1.5" fill="#6366f1"/>
+  <rect x="4" y="22" width="10" height="3" rx="1.5" fill="#6366f1"/>
+  <polygon points="6,30 14,30 10,36" fill="white" opacity="0.9"/>
+  <text x="40" y="28" font-family="'Segoe UI', Arial, sans-serif" font-size="22" font-weight="700" fill="white" letter-spacing="-0.5">Nexiflow</text>
+</svg>
