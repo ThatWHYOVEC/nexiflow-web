@@ -4,10 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Ceník – Nexiflow</title>
-    <meta name="author" content="Nexiflow">
-    <meta name="description" content="Ceník Nexiflow – vyberte si plán pro AI chatbota, který vyhovuje vašemu byznysu. Od free plánu po enterprise řešení.">
-    <meta name="keywords" content="Nexiflow, AI chatbot, ceník, plány, zákaznická podpora, automatizace">
+    <title>Ceník – NexiFlow</title>
+    <meta name="author" content="NexiFlow">
+    <meta name="description" content="Ceník NexiFlow – vyberte si plán pro AI chatbota, který vyhovuje vašemu byznysu. Od free plánu po enterprise řešení.">
+    <meta name="keywords" content="NexiFlow, AI chatbot, ceník, plány, zákaznická podpora, automatizace">
     <meta name="robots" content="INDEX,FOLLOW">
 
     <!-- Mobile Specific Metas -->
@@ -48,9 +48,9 @@
     <!-- Theme Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <!-- Nexiflow Color Override -->
+    <!-- NexiFlow Color Override -->
     <style>
-    /* ══ Nexiflow brand palette ══
+    /* ══ NexiFlow brand palette ══
        Primary green: #013228
        Accent green:  #059669
        Black:         #17191a
@@ -395,6 +395,60 @@
         letter-spacing: 0.05em;
         padding: 10px 12px;
     }
+    /* ── Trust bar ── */
+    .trust-bar { padding: 60px 0; text-align: center; }
+    .trust-bar-label { font-family: 'Sora', sans-serif; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: #9ca3af; margin-bottom: 28px; }
+    .trust-logos { display: flex; align-items: center; justify-content: center; gap: 48px; flex-wrap: wrap; opacity: .5; filter: grayscale(1); transition: all .3s; }
+    .trust-logos:hover { opacity: .8; filter: grayscale(0); }
+    .trust-logos img { height: 32px; width: auto; }
+
+    /* ── Why NexiFlow ── */
+    .why-sec { padding: 80px 0; }
+    .why-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+    .why-card { text-align: center; padding: 32px 20px; border-radius: 16px; border: 1.5px solid #e5e7eb; transition: all .3s; }
+    .why-card:hover { border-color: #013228; box-shadow: 0 8px 30px rgba(0,0,0,.06); transform: translateY(-4px); }
+    .why-icon { width: 56px; height: 56px; background: #ecfdf5; border-radius: 14px; display: inline-flex; align-items: center; justify-content: center; margin-bottom: 16px; }
+    .why-icon svg { color: #059669; }
+    .why-card:hover .why-icon { background: #013228; }
+    .why-card:hover .why-icon svg { color: #6ee7b7; }
+    .why-card h3 { font-family: 'Sora', sans-serif; font-size: 16px; font-weight: 700; color: #17191a; margin-bottom: 8px; }
+    .why-card p { font-size: 14px; color: #6b7280; line-height: 1.65; }
+
+    /* ── Guarantee strip ── */
+    .guarantee-strip { background: #013228; border-radius: 16px; padding: 28px 40px; display: flex; align-items: center; gap: 24px; flex-wrap: wrap; justify-content: center; margin: 0 0 60px; }
+    .guarantee-strip svg { color: #6ee7b7; flex-shrink: 0; }
+    .guarantee-strip h3 { font-family: 'Sora', sans-serif; font-size: 18px; font-weight: 700; color: #fff; margin: 0; }
+    .guarantee-strip p { font-size: 14px; color: rgba(255,255,255,.6); margin: 0; }
+    .guarantee-pills { display: flex; gap: 12px; flex-wrap: wrap; }
+    .guarantee-pill { display: inline-flex; align-items: center; gap: 6px; padding: 8px 16px; border-radius: 30px; border: 1px solid rgba(255,255,255,.15); font-size: 13px; font-weight: 600; color: #fff; }
+    .guarantee-pill svg { color: #6ee7b7; }
+
+    /* ── Testimonials ── */
+    .testi-sec { padding: 80px 0 0; }
+    .testi-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .testi-card { background: #fff; border: 1.5px solid #e5e7eb; border-radius: 16px; padding: 28px; position: relative; }
+    .testi-card::before { content: '"'; font-family: 'Sora', serif; font-size: 48px; font-weight: 800; color: #059669; opacity: .15; position: absolute; top: 16px; right: 24px; line-height: 1; }
+    .testi-stars { color: #f59e0b; font-size: 13px; margin-bottom: 12px; }
+    .testi-text { font-size: 14px; color: #4b5563; line-height: 1.7; margin-bottom: 16px; font-style: italic; }
+    .testi-author { display: flex; align-items: center; gap: 12px; }
+    .testi-avatar { width: 40px; height: 40px; border-radius: 50%; background: #013228; display: flex; align-items: center; justify-content: center; font-family: 'Sora', sans-serif; font-size: 14px; font-weight: 700; color: #6ee7b7; flex-shrink: 0; }
+    .testi-name { font-family: 'Sora', sans-serif; font-size: 14px; font-weight: 600; color: #17191a; }
+    .testi-role { font-size: 12px; color: #9ca3af; }
+
+    /* ── Stats counter ── */
+    .stats-row { display: flex; justify-content: center; gap: 48px; flex-wrap: wrap; margin-top: 40px; text-align: center; }
+    .stat-item h4 { font-family: 'Sora', sans-serif; font-size: 32px; font-weight: 800; color: #013228; margin-bottom: 4px; }
+    .stat-item p { font-size: 13px; color: #9ca3af; font-weight: 500; }
+
+    @media (max-width: 900px) {
+      .why-grid { grid-template-columns: repeat(2, 1fr); }
+      .testi-grid { grid-template-columns: 1fr; }
+      .guarantee-strip { flex-direction: column; text-align: center; padding: 24px 20px; }
+    }
+    @media (max-width: 560px) {
+      .why-grid { grid-template-columns: 1fr; }
+      .stats-row { gap: 28px; }
+    }
     </style>
 
 </head>
@@ -420,7 +474,7 @@
         <div class="th-menu-area text-center">
             <button class="th-menu-toggle"><i class="fal fa-times"></i></button>
             <div class="mobile-logo">
-                <a href="/"><img src="assets/img/logo-header.svg" alt="Nexiflow" width="160" height="36"></a>
+                <a href="/"><img src="assets/img/logo-header.svg" alt="NexiFlow" width="160" height="36"></a>
             </div>
 
             <div class="th-mobile-menu">
@@ -445,7 +499,7 @@
                     <div class="row align-items-center justify-content-between">
                         <div class="col-auto">
                             <div class="header-logo">
-                                <a href="/"><img src="assets/img/logo-header.svg" alt="Nexiflow" width="180" height="40"></a>
+                                <a href="/"><img src="assets/img/logo-header.svg" alt="NexiFlow" width="180" height="40"></a>
                             </div>
                         </div>
                         <div class="col-auto">
@@ -598,7 +652,7 @@ Price Area
                                     <li>2 500 konverzací / měsíc</li>
                                     <li>Pokročilá analytika a CSAT</li>
                                     <li>Webhooky a integrace</li>
-                                    <li>Bez brandingu Nexiflow</li>
+                                    <li>Bez brandingu NexiFlow</li>
                                     <li>Prioritní podpora</li>
                                 </ul>
                             </div>
@@ -612,16 +666,16 @@ Price Area
                             <div class="box-content">
                                 <h3 class="box-title">Enterprise</h3>
                                 <h4 class="box-price"><span class="dollar"></span>2 990<span class="duration"> Kč/měsíc</span></h4>
-                                <p class="subtitle">Neomezeno</p>
+                                <p class="subtitle">10 000 konverzací</p>
                             </div>
                             <div class="available-list">
                                 <ul>
                                     <li>Neomezené chatboty</li>
-                                    <li>Neomezené konverzace</li>
-                                    <li>SLA podpora</li>
+                                    <li>10 000 konverzací / měsíc</li>
+                                    <li>Neomezené týmové členy</li>
+                                    <li>Prioritní SLA podpora</li>
                                     <li>API přístup</li>
-                                    <li>Dedikovaný account manager</li>
-                                    <li>Bez brandingu Nexiflow</li>
+                                    <li>Bez brandingu NexiFlow</li>
                                 </ul>
                             </div>
                             <div class="btn-group"> <a href="mailto:info@nexiflow.cz" class="th-btn2 fw-btn">Kontaktovat obchod</a></div>
@@ -736,7 +790,7 @@ Price Area
                                     <li>2 500 konverzací / měsíc</li>
                                     <li>Pokročilá analytika a CSAT</li>
                                     <li>Webhooky a integrace</li>
-                                    <li>Bez brandingu Nexiflow</li>
+                                    <li>Bez brandingu NexiFlow</li>
                                     <li>Prioritní podpora</li>
                                 </ul>
                             </div>
@@ -750,16 +804,16 @@ Price Area
                             <div class="box-content">
                                 <h3 class="box-title">Enterprise</h3>
                                 <h4 class="box-price"><span class="dollar"></span>2 390<span class="duration"> Kč/měsíc</span></h4>
-                                <p class="subtitle">Neomezeno</p>
+                                <p class="subtitle">10 000 konverzací</p>
                             </div>
                             <div class="available-list">
                                 <ul>
                                     <li>Neomezené chatboty</li>
-                                    <li>Neomezené konverzace</li>
-                                    <li>SLA podpora</li>
+                                    <li>10 000 konverzací / měsíc</li>
+                                    <li>Neomezené týmové členy</li>
+                                    <li>Prioritní SLA podpora</li>
                                     <li>API přístup</li>
-                                    <li>Dedikovaný account manager</li>
-                                    <li>Bez brandingu Nexiflow</li>
+                                    <li>Bez brandingu NexiFlow</li>
                                 </ul>
                             </div>
                             <div class="btn-group"> <a href="mailto:info@nexiflow.cz" class="th-btn2 fw-btn">Kontaktovat obchod</a></div>
@@ -792,6 +846,89 @@ Price Area
                 </div>
             </div>
 
+        </div>
+    </section><!--==============================
+Trust Bar
+==============================-->
+    <div class="trust-bar">
+        <div class="container">
+            <p class="trust-bar-label wow fadeInUp">Důvěřují nám firmy napříč obory</p>
+            <div class="trust-logos wow fadeInUp" data-wow-delay=".2s">
+                <img src="assets/img/brand/brand_1.svg" alt="Klient 1">
+                <img src="assets/img/brand/brand_2.svg" alt="Klient 2">
+                <img src="assets/img/brand/brand_3.svg" alt="Klient 3">
+                <img src="assets/img/brand/brand_4.svg" alt="Klient 4">
+                <img src="assets/img/brand/brand_5.svg" alt="Klient 5">
+                <img src="assets/img/brand/brand_6.svg" alt="Klient 6">
+            </div>
+        </div>
+    </div><!--==============================
+Why NexiFlow
+==============================-->
+    <div class="why-sec">
+        <div class="container">
+            <div class="title-area text-center mb-40">
+                <span class="sub-title style3 text-anime-style-2">[ Proč NexiFlow ]</span>
+                <h2 class="sec-title h3 text-anime-style-3">Váš AI obchodní asistent, české řešení</h2>
+            </div>
+            <div class="why-grid">
+                <div class="why-card wow fadeInUp" data-wow-delay=".1s">
+                    <div class="why-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                    </div>
+                    <h3>Nastavení za 5 minut</h3>
+                    <p>Žádné programování. Registrace, pár kliknutí a chatbot běží na vašem webu. WordPress plugin nebo embed kód.</p>
+                </div>
+                <div class="why-card wow fadeInUp" data-wow-delay=".2s">
+                    <div class="why-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <h3>GDPR & data v EU</h3>
+                    <p>Servery v Německu, šifrování AES-256, Row Level Security. Vaše data nikdy neopustí Evropu.</p>
+                </div>
+                <div class="why-card wow fadeInUp" data-wow-delay=".3s">
+                    <div class="why-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                    </div>
+                    <h3>Česká podpora</h3>
+                    <p>Žádné překládání ticketů. Náš tým mluví česky a pomůže vám přímo v dashboardu nebo přes email.</p>
+                </div>
+                <div class="why-card wow fadeInUp" data-wow-delay=".4s">
+                    <div class="why-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+                    </div>
+                    <h3>Integrace s čímkoliv</h3>
+                    <p>WordPress, WooCommerce, Shoptet, Shopify, Slack, Messenger, Zapier, Make — propojte chatbota s vašimi nástroji.</p>
+                </div>
+            </div>
+
+            <!-- Guarantee strip -->
+            <div class="guarantee-strip wow fadeInUp" data-wow-delay=".2s" style="margin-top:48px;">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11.5 14.5 16 9.5"/></svg>
+                <div>
+                    <h3>Bez rizika. Vyzkoušejte nás.</h3>
+                    <p>Žádné závazky, žádné překvapení v ceně.</p>
+                </div>
+                <div class="guarantee-pills">
+                    <span class="guarantee-pill">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                        14 dní Business zdarma
+                    </span>
+                    <span class="guarantee-pill">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                        Bez kreditní karty
+                    </span>
+                    <span class="guarantee-pill">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                        Zrušení kdykoliv
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="position-relative space overflow-hidden">
+        <div class="container">
             <!-- ══ Feature Comparison Table ══ -->
             <div class="comparison-table-wrap">
                 <div class="title-area text-center">
@@ -816,7 +953,7 @@ Price Area
                             <td colspan="7">Základní</td>
                         </tr>
                         <tr>
-                            <td>Chatboti</td>
+                            <td>AI asistenti</td>
                             <td>1</td>
                             <td>1</td>
                             <td>3</td>
@@ -830,7 +967,7 @@ Price Area
                             <td>300</td>
                             <td>500</td>
                             <td>2 500</td>
-                            <td>Neomezeno</td>
+                            <td>10 000</td>
                             <td>300</td>
                         </tr>
                         <tr>
@@ -840,7 +977,7 @@ Price Area
                             <td>150 KB</td>
                             <td>Neomezeno</td>
                             <td>Neomezeno</td>
-                            <td>Neomezeno</td>
+                            <td>100 KB</td>
                         </tr>
                         <tr>
                             <td>Členové týmu</td>
@@ -849,7 +986,7 @@ Price Area
                             <td>3</td>
                             <td>10</td>
                             <td>Neomezeno</td>
-                            <td>1</td>
+                            <td>2</td>
                         </tr>
 
                         <!-- FUNKCE -->
@@ -1042,6 +1179,70 @@ Price Area
             </div>
         </div>
     </section><!--==============================
+Testimonials
+==============================-->
+    <div class="testi-sec">
+        <div class="container">
+            <div class="title-area text-center mb-40">
+                <span class="sub-title style3 text-anime-style-2">[ Reference ]</span>
+                <h2 class="sec-title h3 text-anime-style-3">Co říkají naši zákazníci</h2>
+            </div>
+            <div class="testi-grid">
+                <div class="testi-card wow fadeInUp" data-wow-delay=".1s">
+                    <div class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="testi-text">NexiFlow nám ušetřil desítky hodin měsíčně. Chatbot odpovídá na 80 % dotazů sám a zákazníci jsou spokojení, že dostanou odpověď okamžitě — i v noci.</p>
+                    <div class="testi-author">
+                        <div class="testi-avatar">MK</div>
+                        <div>
+                            <div class="testi-name">Martin K.</div>
+                            <div class="testi-role">Majitel e-shopu</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testi-card wow fadeInUp" data-wow-delay=".2s">
+                    <div class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="testi-text">Konečně české řešení, které funguje. Nastavení trvalo 10 minut, integrace s WooCommerce bez problému. Podpora odpověděla do hodiny česky.</p>
+                    <div class="testi-author">
+                        <div class="testi-avatar">LV</div>
+                        <div>
+                            <div class="testi-name">Lucie V.</div>
+                            <div class="testi-role">Marketing manager, SaaS</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testi-card wow fadeInUp" data-wow-delay=".3s">
+                    <div class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="testi-text">Přešli jsme ze Smartsupp na NexiFlow kvůli AI. Chatbot se naučil naše FAQ za odpoledne a kvalita odpovědí je úplně jiná liga. ROI se vrátil za měsíc.</p>
+                    <div class="testi-author">
+                        <div class="testi-avatar">PŠ</div>
+                        <div>
+                            <div class="testi-name">Petr Š.</div>
+                            <div class="testi-role">Zakladatel, IT agentura</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stats-row wow fadeInUp" data-wow-delay=".2s">
+                <div class="stat-item">
+                    <h4>500+</h4>
+                    <p>Aktivních firem</p>
+                </div>
+                <div class="stat-item">
+                    <h4>80 %</h4>
+                    <p>Dotazů vyřeší AI</p>
+                </div>
+                <div class="stat-item">
+                    <h4>&lt; 2 s</h4>
+                    <p>Průměrná odpověď</p>
+                </div>
+                <div class="stat-item">
+                    <h4>4.9/5</h4>
+                    <p>Hodnocení zákazníků</p>
+                </div>
+            </div>
+        </div>
+    </div><!--==============================
 Faq Area
 ==============================-->
     <div class="overflow-hidden  space overflow-hidden" id="faq-sec" data-bg-src="assets/img/bg/faq_bg_1.jpg">
@@ -1060,7 +1261,7 @@ Faq Area
             <div class="row gy-4">
                 <div class="col-xl-4">
                     <div class="faq-card">
-                        <h3 class="box-title">1. Jak dlouho trvá nastavení Nexiflow?</h3>
+                        <h3 class="box-title">1. Jak dlouho trvá nastavení NexiFlow?</h3>
                         <div class="box-content">
                             <p class="box-text">Nastavení zabere jen pár minut. Žádné technické znalosti nejsou potřeba. Zaregistrujte se, nakonfigurujte chatbota a vložte kód na web.</p>
                         </div>
@@ -1068,7 +1269,7 @@ Faq Area
                 </div>
                 <div class="col-xl-4">
                     <div class="faq-card">
-                        <h3 class="box-title">2. Mohu Nexiflow propojit s dalšími nástroji?</h3>
+                        <h3 class="box-title">2. Mohu NexiFlow propojit s dalšími nástroji?</h3>
                         <div class="box-content">
                             <p class="box-text">Ano — podporujeme WordPress, WooCommerce, Shopify, Shoptet, Upgates, PrestaShop a jakýkoliv web přes embed kód. Webhooky pro CRM a Slack.</p>
                         </div>
@@ -1076,7 +1277,7 @@ Faq Area
                 </div>
                 <div class="col-xl-4">
                     <div class="faq-card">
-                        <h3 class="box-title">3. Funguje Nexiflow na mobilu?</h3>
+                        <h3 class="box-title">3. Funguje NexiFlow na mobilu?</h3>
                         <div class="box-content">
                             <p class="box-text">Widget je plně responzivní. Na mobilu se zobrazí jako celoobrazovkový chat. Dashboard je také přístupný z mobilního prohlížeče.</p>
                         </div>
@@ -1086,7 +1287,7 @@ Faq Area
                     <div class="faq-card">
                         <h3 class="box-title">4. Potřebuji kreditní kartu k registraci?</h3>
                         <div class="box-content">
-                            <p class="box-text">Ne. Registrace i 5denní Business trial jsou zcela zdarma bez zadávání platebních údajů.</p>
+                            <p class="box-text">Ne. Registrace i 14denní Business trial jsou zcela zdarma bez zadávání platebních údajů.</p>
                         </div>
                     </div>
                 </div>
@@ -1100,9 +1301,57 @@ Faq Area
                 </div>
                 <div class="col-xl-4">
                     <div class="faq-card">
-                        <h3 class="box-title">6. Je Nexiflow GDPR kompatibilní?</h3>
+                        <h3 class="box-title">6. Je NexiFlow GDPR kompatibilní?</h3>
                         <div class="box-content">
                             <p class="box-text">Ano. Data jsou uložena v EU se šifrováním. Přístup je chráněn Row-Level Security. Kontakty lze smazat na žádost.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4">
+                    <div class="faq-card">
+                        <h3 class="box-title">7. Co se stane po skončení trialu?</h3>
+                        <div class="box-content">
+                            <p class="box-text">Účet se automaticky přepne na bezplatný Starter plán. Žádné poplatky. Data zůstávají — můžete kdykoliv upgradovat.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4">
+                    <div class="faq-card">
+                        <h3 class="box-title">8. Mohu změnit plán kdykoliv?</h3>
+                        <div class="box-content">
+                            <p class="box-text">Ano. Upgrade je okamžitý s poměrnou úhradou. Downgrade se provede na konci fakturačního období. Bez sankcí.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4">
+                    <div class="faq-card">
+                        <h3 class="box-title">9. Co je "konverzace" v limitu?</h3>
+                        <div class="box-content">
+                            <p class="box-text">Konverzace je jeden chatový dialog mezi návštěvníkem a chatbotem/operátorem. Neúčtujeme jednotlivé zprávy — pouze zahájené konverzace.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4">
+                    <div class="faq-card">
+                        <h3 class="box-title">10. Jak funguje Lifetime plán?</h3>
+                        <div class="box-content">
+                            <p class="box-text">Jednorázová platba 6 790 Kč, žádné měsíční poplatky navždy. Limitováno pro prvních 50 uživatelů. Zahrnuje 2 chatboty a 300 konverzací/měsíc.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4">
+                    <div class="faq-card">
+                        <h3 class="box-title">11. Jaké platební metody přijímáte?</h3>
+                        <div class="box-content">
+                            <p class="box-text">Visa, Mastercard, Amex a SEPA bankovní převod. Platby zpracovává Stripe — vaše karta není uložena na našich serverech.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4">
+                    <div class="faq-card">
+                        <h3 class="box-title">12. Čím se lišíte od Smartsupp?</h3>
+                        <div class="box-content">
+                            <p class="box-text">NexiFlow je AI-first — chatbot se učí z vašich dat a odpovídá sám. Smartsupp nabízí primárně live chat. Navíc máme nižší ceny a českou podporu.</p>
                         </div>
                     </div>
                 </div>
@@ -1122,11 +1371,11 @@ Cta Area
                     </div>
                     <div class="col-lg-6">
                         <div class="title-area">
-                            <h2 class="sec-title h3 text-white text-anime-style-2">Vytvořte AI chatbota na pár kliknutí</h2>
+                            <h2 class="sec-title h3 text-white text-anime-style-2">Vytvořte AI obchodního asistenta na pár kliknutí</h2>
                             <span class="box-text text-anime-style-3 text-white">Začněte zdarma během pár minut. Žádná kreditní karta není potřeba.</span>
                         </div>
                         <div class="btn-group justify-content-center justify-content-lg-between">
-                            <a href="https://app.nexiflow.cz" class="th-btn2 style3">Vyzkoušet 5 dní zdarma <span class="icon"><img src="assets/img/icon/star2.svg" alt=""></span></a>
+                            <a href="https://app.nexiflow.cz" class="th-btn2 style3">Vyzkoušet 14 dní zdarma <span class="icon"><img src="assets/img/icon/star2.svg" alt=""></span></a>
                         </div>
 
 
@@ -1142,12 +1391,12 @@ Cta Area
             <div class="widget-area">
                 <div class="footer-top ">
                     <div class="row gx-40 gy-4 justify-content-center justify-content-lg-between">
-                        <div class="col-lg-5 col-xl-4">
-                            <div class="footer-logo"><img src="assets/img/logo-footer-white.svg" alt="Nexiflow" width="200" height="44"></div>
+                        <div class="col-lg-4 col-xl-3">
+                            <div class="footer-logo"><img src="assets/img/logo-footer-white.svg" alt="NexiFlow" width="200" height="44"></div>
                         </div>
-                        <div class="col-lg-6 col-xl-5">
-                            <div class="ps-xl-5">
-                                <h2 class="box-title text-white">Vyzkoušejte Nexiflow zdarma</h2>
+                        <div class="col-lg-7 col-xl-6">
+                            <div>
+                                <h2 class="box-title text-white">Vyzkoušejte NexiFlow zdarma</h2>
                                 <div class="btn-group justify-content-center justify-content-lg-start">
                                     <a href="https://app.nexiflow.cz" class="th-btn2">Vyzkoušet zdarma</a>
                                     <a href="/#kontakt" class="th-btn2 style3">Zarezervovat demo</a>
@@ -1164,7 +1413,7 @@ Cta Area
                     <div class="widget footer-widget">
                         <h3 class="widget_title">[ O nás ]</h3>
                         <div class="th-widget-about">
-                            <p class="about-text">Nexiflow je AI chatbot platforma pro firmy, které chtějí automatizovat zákaznickou podporu a nikdy nenechat zákazníka bez odpovědi.</p>
+                            <p class="about-text">NexiFlow je AI obchodní asistent pro weby a e-shopy. Automatizuje zákaznickou podporu, prodej i komunikaci — 24/7, bez čekání.</p>
                             <div class="th-social">
                                 <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
                                 <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
@@ -1194,25 +1443,25 @@ Cta Area
                         <h3 class="widget_title">[ Firma ]</h3>
                         <div class="menu-all-pages-container">
                             <ul class="menu">
-                                <li><a href="#">O nás</a></li>
-                                <li><a href="#">Changelog</a></li>
+                                <li><a href="/o-nas">O nás</a></li>
+                                <li><a href="/changelog">Changelog</a></li>
                                 <li><a href="/#kontakt">Kontakt</a></li>
-                                <li><a href="#">Obchodní podmínky</a></li>
-                                <li><a href="#">Ochrana osobních údajů</a></li>
+                                <li><a href="/obchodni-podminky">Obchodní podmínky</a></li>
+                                <li><a href="/ochrana-osobnich-udaju">Ochrana osobních údajů</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-xl-auto">
                     <div class="widget widget_nav_menu footer-widget">
-                        <h3 class="widget_title">[ Funkce ]</h3>
+                        <h3 class="widget_title">[ Řešení ]</h3>
                         <div class="menu-all-pages-container">
                             <ul class="menu">
-                                <li><a href="#">Analytika v reálném čase</a></li>
-                                <li><a href="#">E-shop integrace</a></li>
-                                <li><a href="#">Automatizace</a></li>
-                                <li><a href="#">Česká podpora</a></li>
-                                <li><a href="#">Export dat</a></li>
+                                <li><a href="/pro-eshopy">Pro e-shopy</a></li>
+                                <li><a href="/pro-zakaznickou-podporu">Zákaznická podpora</a></li>
+                                <li><a href="/nexiflow-vs-smartsupp">NexiFlow vs Smartsupp</a></li>
+                                <li><a href="/nexiflow-vs-tidio">NexiFlow vs Tidio</a></li>
+                                <li><a href="https://help.nexiflow.cz">Nápověda</a></li>
                             </ul>
                         </div>
                     </div>
@@ -1223,7 +1472,7 @@ Cta Area
         <div class="container">
             <div class="copyright-wrap">
                 <div class="row gy-2 align-items-center justify-content-between">
-                    <p class="copyright-text"><i class="fal fa-copyright"></i> Copyright <a href="https://webui.cz">Nexiflow</a> 2026 – produkt WEBUI.CZ. Všechna práva vyhrazena.</p>
+                    <p class="copyright-text"><i class="fal fa-copyright"></i> Copyright <a href="https://webui.cz">NexiFlow</a> 2026 – produkt Jindřicha Skalníka. Všechna práva vyhrazena.</p>
 
 
                 </div>

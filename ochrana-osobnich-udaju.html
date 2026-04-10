@@ -1,28 +1,378 @@
-<!DOCTYPE html>
+<!doctype html>
 <html class="no-js" lang="cs">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Zásady ochrany osobních údajů (GDPR) – Nexiflow. Jak zpracováváme vaše data, kdo k nim má přístup a jaká máte práva.">
-    <meta name="author" content="Nexiflow">
-    <link rel="icon" href="assets/img/favicon.png">
-    <title>Ochrana osobních údajů – Nexiflow</title>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PLXENR6WET"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-PLXENR6WET');
-  </script>
+    <title>Ochrana osobních údajů – NexiFlow</title>
+    <meta name="author" content="NexiFlow">
+    <meta name="description" content="Zásady ochrany osobních údajů (GDPR) – NexiFlow. Jak zpracováváme vaše data, kdo k nim má přístup a jaká máte práva.">
+    <meta name="robots" content="INDEX,FOLLOW">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/svg+xml" href="assets/img/nexiflow-logo-icon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/nexiflow-logo-icon.svg">
+    <meta name="theme-color" content="#013228">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PLXENR6WET"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-PLXENR6WET');
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&family=Urbanist:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
-    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- NexiFlow Color Override -->
     <style>
-      body { padding-top: 90px; }
-      .nf-legal { max-width: 800px; margin: 0 auto; padding: 64px 24px 80px; }
+
+    /* ══ NexiFlow brand palette ══
+       Primary green: #013228
+       Accent green:  #059669
+       Black:         #17191a
+       White:         #ffffff
+       No other colors allowed.
+    ══════════════════════════════ */
+
+    /* Override body.theme which has higher specificity than :root */
+    body.theme,
+    :root {
+        --theme-color: #013228 !important;
+        --theme-color2: #059669 !important;
+        --title-color: #17191a !important;
+        --body-color: #484848;
+        --smoke-color: #e6e6e6;
+        --smoke-color2: #f5f5f5;
+        --smoke-color3: #e8f5e9;
+        --smoke-color4: #f0fdf4;
+        --accent-color: #059669;
+        --heading-color: #17191a;
+        --black-color: #17191a;
+        --black-color2: #17191a;
+    }
+
+    /* ── Buttons: green bg + white text ── */
+    .th-btn, .th-btn2 {
+        background-color: #013228 !important;
+        border-color: #013228 !important;
+        color: #fff !important;
+    }
+    .th-btn:hover, .th-btn2:hover {
+        background-color: #059669 !important;
+        border-color: #059669 !important;
+        color: #fff !important;
+    }
+    .th-btn2.style2 {
+        background: transparent !important;
+        border: 2px solid #059669 !important;
+        color: #059669 !important;
+    }
+    .th-btn2.style2:hover {
+        background: #059669 !important;
+        border-color: #059669 !important;
+        color: #fff !important;
+    }
+    .th-btn2.style3 {
+        background: #fff !important;
+        border-color: #fff !important;
+        color: #013228 !important;
+    }
+    .th-btn2.style3:hover {
+        background: #059669 !important;
+        border-color: #059669 !important;
+        color: #fff !important;
+    }
+    .th-btn2.fw-btn {
+        background-color: #013228 !important;
+        border-color: #013228 !important;
+        color: #fff !important;
+    }
+    .th-btn2.fw-btn:hover {
+        background-color: #059669 !important;
+        border-color: #059669 !important;
+        color: #fff !important;
+    }
+
+    /* ── Text helpers ── */
+    .text-theme { color: #059669 !important; }
+    .sub-title.style3 { color: #059669 !important; }
+    a:hover { color: #059669; }
+
+    /* ── Hero ── */
+    .hero-2,
+    .th-hero-wrapper.hero-2 { background-color: #013228 !important; }
+
+    /* ── CTA ── */
+    .cta-area3 { background-color: transparent !important; }
+
+    /* ── Footer ── */
+    .footer-layout2 { background-color: transparent !important; }
+    .footer-top { border-color: rgba(255,255,255,0.1) !important; }
+    .footer-layout2 .th-social a:hover { background-color: #059669 !important; }
+
+    /* ── Pricing ── */
+    .price-card {
+        border: 2px solid #059669 !important;
+        background: #f0fdf4 !important;
+    }
+    .price-card .box-price { color: #17191a; }
+    .price-card .available-list li::before { color: #059669; }
+    .offer-tag { background-color: #C6A572 !important; color: #fff !important; }
+    .offer-tag img { filter: brightness(10); }
+    .pricing-tabs .switch-area .toggler.toggler--is-active,
+    .pricing-tabs .switch-area .toggler:hover { color: #013228 !important; }
+    .pricing-tabs .toggle .b.switch { background-color: #013228 !important; }
+
+    /* Business + Lifetime: full green highlight */
+    .price-card.highlight-green {
+        background: #013228 !important;
+        border-color: #013228 !important;
+    }
+    .price-card.highlight-green .box-title,
+    .price-card.highlight-green .box-price,
+    .price-card.highlight-green .box-price .dollar,
+    .price-card.highlight-green .box-price .duration,
+    .price-card.highlight-green .subtitle,
+    .price-card.highlight-green .available-list li {
+        color: #fff !important;
+    }
+    .price-card.highlight-green .available-list li::before {
+        color: #C6A572 !important;
+    }
+    .price-card.highlight-green .available-list li {
+        color: rgba(255,255,255,0.9) !important;
+    }
+    /* Zlaté checkmarky v zelených kartách */
+    .price-card.highlight-green .available-list ul li::after,
+    .price-card.highlight-green .available-list li::after,
+    .price-card.highlight-green .available-list li:after {
+        color: #C6A572 !important;
+        -webkit-text-fill-color: #C6A572 !important;
+    }
+    /* Zlatý badge text */
+    .price-card.highlight-green .offer-tag {
+        background: #C6A572 !important;
+        color: #fff !important;
+    }
+    /* Zlatý subtitle v zelených kartách */
+    .price-card.highlight-green .subtitle {
+        color: #C6A572 !important;
+    }
+    /* Zlatá cena v zelených kartách */
+    .price-card.highlight-green .box-price {
+        color: #C6A572 !important;
+    }
+    .price-card.highlight-green .box-price .duration {
+        color: rgba(255,255,255,0.6) !important;
+    }
+    .price-card.highlight-green .th-btn2.fw-btn {
+        background: #059669 !important;
+        border-color: #059669 !important;
+        color: #fff !important;
+    }
+    .price-card.highlight-green .th-btn2.fw-btn:hover {
+        background: #fff !important;
+        color: #013228 !important;
+    }
+    .price-card.highlight-green .offer-tag {
+        background: #C6A572 !important;
+        color: #fff !important;
+    }
+    .price-card.highlight-green .lifetime-badge {
+        background: linear-gradient(135deg, #C6A572, #d4b896);
+        color: #fff;
+    }
+    .lifetime-badge {
+        display: inline-block;
+        background: linear-gradient(135deg, #C6A572, #d4b896);
+        color: #fff;
+        font-size: 11px;
+        font-weight: 700;
+        padding: 4px 12px;
+        border-radius: 20px;
+        margin-top: 8px;
+        letter-spacing: 0.03em;
+    }
+
+    /* ── Process steps ── */
+    .process-card .number { color: #059669 !important; }
+    .process-card:hover { border-color: #013228 !important; }
+    .process-line { border-color: #e6e6e6; }
+
+    /* ── Feature boxes ── */
+    .feature-box { border: 1px solid #e6e6e6; }
+    .feature-box:hover { border-color: #013228 !important; }
+
+    /* ── Service / case study ── */
+    /* Service cards use original ser-shape.png mask for cut-out effect */
+    .service-box .box-icon {
+        width: 56px;
+        height: 56px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f0fdf4 !important;
+        border: none !important;
+        border-radius: 50% !important;
+        box-shadow: none !important;
+        transition: background-color 0.3s;
+    }
+    .service-box .box-icon img {
+        filter: invert(27%) sepia(89%) saturate(1090%) hue-rotate(131deg) brightness(93%) contrast(96%);
+        transition: filter 0.3s;
+    }
+    .service-box:hover .box-icon {
+        background-color: #013228 !important;
+    }
+    .service-box:hover .box-icon img {
+        filter: brightness(10) !important;
+    }
+    .icon-btn .icon { background-color: #f5f5f5; }
+    .icon-btn:hover .icon { background-color: #013228 !important; }
+    .icon-btn:hover .icon img { filter: brightness(10); }
+
+    /* ── FAQ ── */
+    .faq-card { border: 1px solid #e6e6e6; }
+    .faq-card .box-title { color: #17191a; }
+
+    /* ── Testimonials ── */
+    .testi-box .rating i { color: #059669 !important; }
+    .client-review i { color: #059669 !important; }
+    .testi-box .shape {
+        right: 0 !important;
+        bottom: 0 !important;
+        left: auto !important;
+        top: auto !important;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .testi-box .shape img {
+        width: 201px !important;
+        height: 150px !important;
+        object-fit: contain;
+    }
+    .testi-box:hover .shape {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    /* ── Integration ── */
+    .integration-icon { border-color: #e6e6e6 !important; overflow: hidden; }
+    .integration-icon:hover { border-color: #013228 !important; }
+    .integration-icon img {
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+        border-radius: 0;
+        vertical-align: middle;
+    }
+
+    /* ── Blog ── */
+    .blog-card .box-title a:hover { color: #059669 !important; }
+
+    /* ── Scroll top ── */
+    .scroll-top svg path { stroke: #059669; }
+
+    /* ── Swiper ── */
+    .swiper-pagination-progressbar-fill { background: #013228 !important; }
+    .slider-arrow:hover { background-color: #013228 !important; color: #fff !important; }
+    .slider-arrow:hover img { filter: brightness(10); }
+
+    /* ── Misc ── */
+    ::selection { background: #059669; color: #fff; }
+    .mouseCursor.cursor-inner { background-color: #013228; }
+
+    /* Hero chat bubbles — inline data URI masks (fix file:// CORS) */
+    .hero-2 .hero-bottom-text {
+        -webkit-mask-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAABFCAYAAABpCQLmAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALYSURBVHgB7dzhVdNQGIDhL0zABoYJxAkoG9QJdAScQNxAN9AN3ACcQJ3AbgAb1O9CQFqS9hbuH+zznPOdQGj/vufmJqGLSsvl8jAP85yTnOOcPucwgJfoOmeR8yvnR873ruuu4xm6bR/IiPR5OMt5F+IB/7OvOZ8yKot4gsmYDCuRj3EbEmB/fM6gfIgdjcZkWI1cxO2lDLB/Fjmnu6xSDtZPZEjKfoiQwH7rcy6GHlRZWZlYkQBrFlG5QrmPybBH8jOEBFi1yHmz7W7Pw8ucstnaB8CqPm77sNHNymS4vPkTANOONl3u3K1MzgNgs42PiXTDXslVAGxW9kyOpvZOyspkHgDb3b1SM6rEZBYAdU6m/lBi8joA6kw+xFZi0gdAnX7qD2UDdhkAlXIDdvSdvoMAaEBMgCbEBGhCTIAmxARoQkyAJsQEaEJMgCbEBGhCTIAmxARoQkyAJsQEaEJMgCbEBGhCTIAmxARoQkyAJsQEaEJMgCbEBGhCTIAmxARoQkyAJsQEaEJMgCbEBGhCTICdLJfLfuy8mABNiAmwq+Oxk2IC7Opw7GSJyXUA1OvHTpaYLAKg3quxkyUmvwOg3mzsZInJZQDU6/P28KN9kxKT72HfBNjNozs6B13XlZB8C4B6s/UTd7eGPwdAvZP1EzcxydXJIg9fAqDO8fq+ycOH1s7DbWKgTgnJyr7JfUyGvZPTEBSgzuzhLyuP0w+XO29DUIDtVvZNurFPDK8YX8TEY7MAcftIydFwVTP+ol9ZoeQchU1ZYNrKvsnGt4YzKGd5KFHxHAowZnb3Q1f7jeE20Hz4cqlRednnMIB9dpmLjnLjpj4mwMsyLADK9MOp4+HncnwdbRYD9/smYgJ7arjRUsIyj3+BeYrTjMllABQlLjnvcy6XuzkPgCkZiXnO15w/W2JyEQA1MhjlXZyziVXL1dj/NwHYqIRjZNUyswELPEsJSR6u/wJaghMhMu3DYgAAAABJRU5ErkJggg==") !important;
+        mask-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAABFCAYAAABpCQLmAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALYSURBVHgB7dzhVdNQGIDhL0zABoYJxAkoG9QJdAScQNxAN9AN3ACcQJ3AbgAb1O9CQFqS9hbuH+zznPOdQGj/vufmJqGLSsvl8jAP85yTnOOcPucwgJfoOmeR8yvnR873ruuu4xm6bR/IiPR5OMt5F+IB/7OvOZ8yKot4gsmYDCuRj3EbEmB/fM6gfIgdjcZkWI1cxO2lDLB/Fjmnu6xSDtZPZEjKfoiQwH7rcy6GHlRZWZlYkQBrFlG5QrmPybBH8jOEBFi1yHmz7W7Pw8ucstnaB8CqPm77sNHNymS4vPkTANOONl3u3K1MzgNgs42PiXTDXslVAGxW9kyOpvZOyspkHgDb3b1SM6rEZBYAdU6m/lBi8joA6kw+xFZi0gdAnX7qD2UDdhkAlXIDdvSdvoMAaEBMgCbEBGhCTIAmxARoQkyAJsQEaEJMgCbEBGhCTIAmxARoQkyAJsQEaEJMgCbEBGhCTIAmxARoQkyAJsQEaEJMgCbEBGhCTIAmxARoQkyAJsQEaEJMgCbEBGhCTICdLJfLfuy8mABNiAmwq+Oxk2IC7Opw7GSJyXUA1OvHTpaYLAKg3quxkyUmvwOg3mzsZInJZQDU6/P28KN9kxKT72HfBNjNozs6B13XlZB8C4B6s/UTd7eGPwdAvZP1EzcxydXJIg9fAqDO8fq+ycOH1s7DbWKgTgnJyr7JfUyGvZPTEBSgzuzhLyuP0w+XO29DUIDtVvZNurFPDK8YX8TEY7MAcftIydFwVTP+ol9ZoeQchU1ZYNrKvsnGt4YzKGd5KFHxHAowZnb3Q1f7jeE20Hz4cqlRednnMIB9dpmLjnLjpj4mwMsyLADK9MOp4+HncnwdbRYD9/smYgJ7arjRUsIyj3+BeYrTjMllABQlLjnvcy6XuzkPgCkZiXnO15w/W2JyEQA1MhjlXZyziVXL1dj/NwHYqIRjZNUyswELPEsJSR6u/wJaghMhMu3DYgAAAABJRU5ErkJggg==") !important;
+    }
+    .hero-2 .hero-bottom-text.style2 {
+        bottom: calc(11% + 100px) !important;
+        -webkit-mask-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAABVCAYAAABq3wB9AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAL1SURBVHgB7d3RcRNXFIDhowzvcSqIXEGcClALqSCkA1NBcAWQCuJ04FQQUwFOBSwdqANxrlh5ZLG73oXzAv6+mYMsITM8/XPu1Xi8iq+02+02+fA856KfdQDfqq6ftzk3q9Xqbu43ruILZURe5MPvOZsAvlddzlVG5fqxNy6OSb+J/B02EHhKupzfpjaVH2KBDMmf+fBfCAk8Neucd30DBs3eTPIfeZ0PlwE8dW9yQ3l5+uKszaSvkZAAzeXQhvLoZpLf1CLyOgAeepkbypvDk8mYZEjW+fAu5ywAHtrm/JpB6dqTx445r0JIgGGtDffHndHNpN9K3gfAtJ9yO9lObSYuXIE59q2Y2kzaVrIOgGldbibngzFxxAEWOh875lwEwHwXYzFZB8B867GY+DgYWOJs0Q/6AYwRE6CEmAAlxAQoISZACTEBSogJUEJMgBJiApQQE6CEmAAlxAQoISZACTEBSogJUEJMgBJiApQQE6CEmAAlxAQoISZACTEBSogJUEJMgBJiApQQE6CEmAAlxAQoISZACTEBSogJUEJMgBJiApQQE6CEmAAlxAQoISZACTEBSogJUEJMgBJiApQQE6CEmAAlxmKyDoAFxmJyFgALjMXkxwBYYCwm5wGwwFhMfg6A+bafxWS3210EwDLd0GayDoBl7oZisgmA+brVajW4mfwSAPP92/5Ynb6adya7AJjv/LPNJDuyCYD5rltI2henx5xNAMyzzbk6PDmNyfMAmOfqsJU0D+5M3JcAM7WQvDp+4X4zcV8CzPTXaUia42POJgCmtY3kcugvnh197b4EGNPl/JEhuR17w/2difsSYMDb+PTx7/Vjb9xvJu5LgN6HnLt+bqc2kVOHY84mamyP/jPdycTxx0jA9+UQky+9L2nx+D/nJvqaZTC2ATw5+zuThfclbfO46Uc8gL1nM+5LjrePG0cVYEg75mwGXm8B+SfnNj5dwtg+gEktJof7kvYR0G0svMEF2MtjzoscvycH+CofAYu9oEk3vkhIAAAAAElFTkSuQmCC") !important;
+        mask-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAABVCAYAAABq3wB9AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAL1SURBVHgB7d3RcRNXFIDhowzvcSqIXEGcClALqSCkA1NBcAWQCuJ04FQQUwFOBSwdqANxrlh5ZLG73oXzAv6+mYMsITM8/XPu1Xi8iq+02+02+fA856KfdQDfqq6ftzk3q9Xqbu43ruILZURe5MPvOZsAvlddzlVG5fqxNy6OSb+J/B02EHhKupzfpjaVH2KBDMmf+fBfCAk8Neucd30DBs3eTPIfeZ0PlwE8dW9yQ3l5+uKszaSvkZAAzeXQhvLoZpLf1CLyOgAeepkbypvDk8mYZEjW+fAu5ywAHtrm/JpB6dqTx445r0JIgGGtDffHndHNpN9K3gfAtJ9yO9lObSYuXIE59q2Y2kzaVrIOgGldbibngzFxxAEWOh875lwEwHwXYzFZB8B867GY+DgYWOJs0Q/6AYwRE6CEmAAlxAQoISZACTEBSogJUEJMgBJiApQQE6CEmAAlxAQoISZACTEBSogJUEJMgBJiApQQE6CEmAAlxAQoISZACTEBSogJUEJMgBJiApQQE6CEmAAlxAQoISZACTEBSogJUEJMgBJiApQQE6CEmAAlxAQoISZACTEBSogJUEJMgBJiApQQE6CEmAAlxmKyDoAFxmJyFgALjMXkxwBYYCwm5wGwwFhMfg6A+bafxWS3210EwDLd0GayDoBl7oZisgmA+brVajW4mfwSAPP92/5Ynb6adya7AJjv/LPNJDuyCYD5rltI2henx5xNAMyzzbk6PDmNyfMAmOfqsJU0D+5M3JcAM7WQvDp+4X4zcV8CzPTXaUia42POJgCmtY3kcugvnh196b4EGNPl/JEhuR17w/2difsSYMDb+PTx7/Vjb9xvJu5LgN6HnLt+bqc2kVOHY84mamyP/jPdycTxx0jA9+UQky+9L2nx+D/nJvqaZTC2ATw5+zuThfclbfO46Uc8gL1nM+5LjrePG0cVYEg75mwGXm8B+SfnNj5dwtg+gEktJof7kvYR0G0svMEF2MtjzoscvycH+CofAYu9oEk3vkhIAAAAAElFTkSuQmCC") !important;
+    }
+
+    /* ── Pricing toggle: selected state white text ── */
+    .pricing-tabs .switch-area .toggler.toggler--is-active {
+        color: #fff !important;
+    }
+    .pricing-tabs .toggle .check:checked + .b.switch {
+        background-color: #013228 !important;
+    }
+    .pricing-tabs .switch-area .toggler {
+        color: #484848;
+    }
+
+    /* ── Pricing cards same height ── */
+    .price-card_wrapp {
+        display: flex;
+    }
+    .price-card {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .price-card .available-list {
+        flex: 1;
+    }
+    .price-card .btn-group {
+        margin-top: auto;
+    }
+
+    /* ── Copyright bar ── */
+    .footer-layout2 .copyright-wrap {
+        padding: 30px 0 !important;
+        position: relative;
+    }
+    .footer-layout2 .copyright-text {
+        position: absolute;
+        bottom: -6px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: auto !important;
+        max-width: 90vw;
+        padding: 12px 60px !important;
+        white-space: nowrap;
+        font-size: 14px;
+        text-align: center;
+        background-color: #fff;
+        border-radius: 20px 20px 0 0;
+        color: #484848;
+    }
+
+    /* ── Logo sizing ── */
+    .header-logo img {
+        max-height: 40px;
+        width: auto;
+    }
+    .mobile-logo img {
+        max-height: 36px;
+        width: auto;
+    }
+    .footer-logo img {
+        max-height: 128px;
+        width: auto;
+    }
+    /* Footer buttons side by side */
+    .footer-top .th-btn2 {
+        white-space: nowrap;
+    }
+    .footer-top .btn-group {
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        flex-direction: row !important;
+        gap: 16px;
+    }
+    
+    </style>
+    <style>
+.nf-legal { max-width: 800px; margin: 0 auto; padding: 64px 24px 80px; }
       .nf-legal h1 { font-size: 40px; font-weight: 800; color: var(--heading-color); margin-bottom: 8px; }
       .nf-legal .nf-meta { font-size: 14px; color: #999; margin-bottom: 48px; }
       .nf-legal h2 { font-size: 22px; font-weight: 700; color: var(--heading-color); margin: 40px 0 12px; padding-bottom: 8px; border-bottom: 2px solid #e8e8f0; }
@@ -39,51 +389,87 @@
       .nf-right-item strong { display: block; color: var(--heading-color); margin-bottom: 4px; }
       .nf-right-item span { font-size: 14px; color: #666; }
       @media(max-width:600px){ .nf-rights-grid { grid-template-columns: 1fr; } }
-    </style>
-  </head>
-  <body>
-    <div class="cs_preloader cs_white_bg">
-      <div class="cs_preloader_in position-relative"><span></span></div>
-    </div>
 
-    <header class="cs_site_header cs_style_1 cs_type_1 cs_sticky_header cs_heading_color cs_heading_font position-relative">
-      <div class="cs_main_header position-relative z-1">
-        <div class="container">
-          <div class="cs_main_header_in position-relative">
-            <div class="cs_header_shape position-absolute">
-              <img src="assets/img/header-shape-2.svg" alt="Header shape">
+    </style>
+
+</head>
+
+<body class="theme">
+
+    <div class="mouseCursor cursor-outer"></div>
+    <div class="mouseCursor cursor-inner"></div>
+
+    <div class="th-menu-wrapper">
+        <div class="th-menu-area text-center">
+            <button class="th-menu-toggle"><i class="fal fa-times"></i></button>
+            <div class="mobile-logo">
+                <a href="/"><img src="assets/img/logo-header.svg" alt="NexiFlow" width="160" height="36"></a>
             </div>
-            <div class="cs_main_header_left position-relative z-1">
-              <a class="cs_site_branding" href="/" aria-label="Nexiflow – úvodní stránka">
-                <img src="assets/img/nexiflow-logo.svg" alt="Nexiflow logo">
-              </a>
-            </div>
-            <div class="cs_main_header_center">
-              <div class="cs_nav">
-                <ul class="cs_nav_list">
-                  <li><a href="/#funkce">Funkce</a></li>
-                  <li><a href="/#jak-to-funguje">Jak to funguje</a></li>
-                  <li><a href="/cenik">Ceník</a></li>
-                  <li><a href="/blog">Blog</a></li>
-                  <li><a href="/dokumentace">Dokumentace</a></li>
-                  <li><a href="/#kontakt">Kontakt</a></li>
+            <div class="th-mobile-menu">
+                <ul>
+                    <li><a href="/#features-sec">Funkce</a></li>
+                    <li><a href="/#process-sec">Jak to funguje</a></li>
+                    <li><a href="/cenik">Ceník</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="https://help.nexiflow.cz">Dokumentace</a></li>
+                    <li><a href="/#kontakt">Kontakt</a></li>
                 </ul>
-              </div>
             </div>
-            <div class="cs_main_header_right">
-              <a href="https://dashboard.nexiflow.cz/register" class="cs_btn cs_style_1 cs_bg_1 cs_fs_14 cs_bold cs_white_color text-uppercase">
-                <span>Začít zdarma</span>
-                <span class="cs_btn_icon"><i class="fa-solid fa-arrow-right"></i></span>
-              </a>
-            </div>
-          </div>
         </div>
-      </div>
+    </div>
+    <header class="th-header header-layout2 header-absolute">
+        <div class="sticky-wrapper">
+            <div class="menu-area">
+                <div class="container th-container">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-auto">
+                            <div class="header-logo">
+                                <a href="/"><img src="assets/img/logo-header.svg" alt="NexiFlow" width="180" height="40"></a>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <nav class="main-menu style2 d-none d-lg-inline-block">
+                                <ul>
+                                    <li><a href="/#features-sec">Funkce</a></li>
+                                    <li><a href="/#process-sec">Jak to funguje</a></li>
+                                    <li><a href="/cenik">Ceník</a></li>
+                                    <li><a href="/blog">Blog</a></li>
+                                    <li><a href="https://help.nexiflow.cz">Dokumentace</a></li>
+                                    <li><a href="/#kontakt">Kontakt</a></li>
+                                </ul>
+                            </nav>
+                            <div class="header-button">
+                                <button type="button" class="th-menu-toggle d-inline-block d-lg-none"><i class="far fa-bars"></i></button>
+                            </div>
+                        </div>
+                        <div class="col-auto d-none d-xl-block">
+                            <div class="header-button">
+                                <a href="https://app.nexiflow.cz" class="th-btn2 style2">Přihlásit se <img src="assets/img/icon/user.svg" alt=""></a>
+                                <a href="https://app.nexiflow.cz" class="th-btn2 d-none d-xxl-block">Vyzkoušet zdarma</a>
+                                <button type="button" class="th-menu-toggle d-inline-block d-xl-none"><i class="far fa-bars"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
 
-    <div class="nf-legal">
+    <div class="breadcumb-wrapper" data-bg-src="assets/img/bg/breadcumb-bg.jpg">
+        <div class="container">
+            <div class="breadcumb-content">
+                <h1 class="breadcumb-title text-anime-style-3">Ochrana osobních údajů</h1>
+                <ul class="breadcumb-menu wow fadeInUp">
+                    <li><a href="/">Domů</a></li>
+                    <li>Ochrana osobních údajů</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+<div class="nf-legal">
       <h1>Ochrana osobních údajů</h1>
-      <p class="nf-meta">Platné od 25. 3. 2026 &nbsp;·&nbsp; Nexiflow / WEBUI.CZ &nbsp;·&nbsp; v souladu s GDPR (nařízení EU 2016/679)</p>
+      <p class="nf-meta">Platné od 25. 3. 2026 &nbsp;·&nbsp; NexiFlow / Jindřich Skalník &nbsp;·&nbsp; v souladu s GDPR (nařízení EU 2016/679)</p>
 
       <div class="nf-highlight">
         Vaše soukromí bereme vážně. Tento dokument vysvětluje, jaké osobní údaje shromažďujeme, proč je zpracováváme a jaká máte práva. Data zákazníků neopouštějí Evropskou unii.
@@ -91,10 +477,11 @@
 
       <h2>1. Správce osobních údajů</h2>
       <p>
-        <strong>WEBUI.CZ</strong><br>
+        <strong>Jindřich Skalník</strong><br>
         IČ: <strong>09965360</strong><br>
-        Sídlo: Praha, Česká republika<br>
-        Kontaktní e-mail: <a href="mailto:info@nexiflow.cz">info@nexiflow.cz</a>
+        Sídlo: Otín 210, 377 01 Jindřichův Hradec<br>
+        Kontaktní e-mail: <a href="mailto:info@nexiflow.cz">info@nexiflow.cz</a><br>
+        Telefon: +420 778 029 782
       </p>
 
       <h2>2. Jaké údaje zpracováváme</h2>
@@ -113,7 +500,7 @@
         <li>Jméno a e-mail – pokud je uživatel dobrovolně poskytne v průběhu chatu</li>
         <li>IP adresa a metadata relace (časové razítko, zdroj)</li>
       </ul>
-      <p><em>Zákazník (provozovatel chatbotu) je v roli správce údajů pro data svých návštěvníků. Nexiflow vystupuje jako zpracovatel.</em></p>
+      <p><em>Zákazník (provozovatel chatbotu) je v roli správce údajů pro data svých návštěvníků. NexiFlow vystupuje jako zpracovatel.</em></p>
 
       <h2>3. Účel a právní základ zpracování</h2>
       <table>
@@ -181,7 +568,8 @@
 
       <h2>5. Doba uchovávání dat</h2>
       <ul>
-        <li>Údaje zákaznického účtu: po dobu trvání smlouvy + 3 roky (zákonné povinnosti)</li>
+        <li>Údaje zákaznického účtu: po dobu trvání smlouvy + <strong>15 let</strong> (zákonné povinnosti – daňové doklady)</li>
+        <li>Marketing a obchodní sdělení: <strong>5 let</strong> nebo do odvolání souhlasu</li>
         <li>Konverzace chatbotu: po dobu aktivního předplatného zákazníka</li>
         <li>Logy a bezpečnostní záznamy: 90 dní</li>
         <li>Po zrušení účtu jsou data smazána do 30 dní, s výjimkou dokladů vyžadovaných zákonem</li>
@@ -234,78 +622,120 @@
       <p>Dotazy k ochraně osobních údajů zasílejte na <a href="mailto:info@nexiflow.cz">info@nexiflow.cz</a>. Odpovíme do 72 hodin.</p>
     </div>
 
-    <footer class="cs_footer cs_style_1 cs_type_1 cs_accent_bg cs_bg_filed cs_white_color" data-src="assets/img/footer-bg-2.svg">
-      <div class="cs_height_130 cs_height_lg_80"></div>
-      <div class="container">
-        <div class="cs_footer_top position-relative">
-          <ul class="cs_location_list cs_mp_0">
-            <li>
-              <span class="cs_location_icon cs_center cs_theme_color_4 cs_radius_100"><i class="fa-solid fa-envelope"></i></span>
-              <a href="mailto:info@nexiflow.cz">info@nexiflow.cz</a>
-            </li>
-            <li>
-              <span class="cs_location_icon cs_center cs_theme_color_4 cs_radius_100"><i class="fa-solid fa-globe"></i></span>
-              <a href="https://dashboard.nexiflow.cz">dashboard.nexiflow.cz</a>
-            </li>
-            <li>
-              <span class="cs_location_icon cs_center cs_theme_color_4 cs_radius_100"><i class="fa-solid fa-location-dot"></i></span>
-              <p class="mb-0">Praha, Česká republika</p>
-            </li>
-          </ul>
-        </div>
-        <div class="cs_footer_main">
-          <div class="cs_footer_widget_wrapper">
-            <div class="cs_footer_widget cs_text_widget">
-              <div class="cs_brand cs_mb_32">
-                <img src="assets/img/nexiflow-logo-white.svg" alt="Nexiflow logo">
-              </div>
-              <p class="cs_mb_32">AI chatbot pro váš web. Automatizujte zákaznickou podporu, zachytávejte leady a nikdy nenechte zákazníka bez odpovědi.</p>
-            </div>
-            <div class="cs_footer_widget cs_links_widget">
-              <h3 class="cs_footer_widget_title cs_fs_24 cs_semibold cs_white_color cs_mb_29">Produkt</h3>
-              <ul class="cs_footer_menu cs_mp_0">
-                <li><a href="/#funkce">Funkce</a></li>
-                <li><a href="/cenik">Ceník</a></li>
-                <li><a href="/blog">Blog</a></li>
-                <li><a href="/dokumentace">Dokumentace</a></li>
-                <li><a href="https://dashboard.nexiflow.cz">Přihlásit se</a></li>
-                <li><a href="https://dashboard.nexiflow.cz/register">Začít zdarma</a></li>
-              </ul>
-            </div>
-            <div class="cs_footer_widget cs_help_widget">
-              <h3 class="cs_footer_widget_title cs_fs_24 cs_semibold cs_white_color cs_mb_29">Firma</h3>
-              <ul class="cs_footer_menu cs_mp_0">
-                <li><a href="/o-nas">O nás</a></li>
-                <li><a href="/changelog">Changelog</a></li>
-                <li><a href="mailto:info@nexiflow.cz">Kontakt</a></li>
-                <li><a href="/obchodni-podminky">Obchodní podmínky</a></li>
-                <li><a href="/ochrana-osobnich-udaju" style="color:var(--theme-color-4);">Ochrana osobních údajů</a></li>
-              </ul>
-            </div>
-            <div class="cs_footer_widget cs_contact_widget">
-              <h3 class="cs_footer_widget_title cs_fs_24 cs_semibold cs_white_color cs_mb_29">Podpora</h3>
-              <ul class="cs_footer_menu cs_mp_0">
-                <li><a href="mailto:info@nexiflow.cz">Centrum podpory</a></li>
-                <li><a href="/#jak-to-funguje">Jak to funguje</a></li>
-                <li><a href="https://dashboard.nexiflow.cz/register">Vyzkoušet demo</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="cs_footer_bottom position-relative">
+    <footer class="footer-wrapper footer-layout2" data-bg-src="assets/footer_bg_2.png">
         <div class="container">
-          <div class="cs_footer_text cs_white_color text-center">Copyright &copy; <span class="cs_getting_year"></span> Nexiflow – produkt <a href="https://webui.cz" style="color:inherit;text-decoration:underline;">WEBUI.CZ</a></div>
+            <div class="widget-area">
+                <div class="footer-top ">
+                    <div class="row gx-40 gy-4 justify-content-center justify-content-lg-between">
+                        <div class="col-lg-4 col-xl-3">
+                            <div class="footer-logo"><img src="assets/img/nexiflow-logo-white.svg" alt="NexiFlow"></div>
+                        </div>
+                        <div class="col-lg-7 col-xl-6">
+                            <div>
+                                <h2 class="box-title text-white">Vyzkoušejte NexiFlow zdarma</h2>
+                                <div class="btn-group justify-content-center justify-content-lg-start">
+                                    <a href="https://app.nexiflow.cz" class="th-btn2">Vyzkoušet zdarma</a>
+                                    <a href="/#kontakt" class="th-btn2 style3">Zarezervovat demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+        <div class="container">
+            <div class="row gy-4 justify-content-between">
+                <div class="col-md-6 col-xl-3">
+                    <div class="widget footer-widget">
+                        <h3 class="widget_title">[ O nás ]</h3>
+                        <div class="th-widget-about">
+                            <p class="about-text">NexiFlow je AI obchodní asistent pro weby a e-shopy. Automatizuje zákaznickou podporu, prodej i komunikaci — 24/7, bez čekání.</p>
+                            <div class="th-social">
+                                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.youtube.com/"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-auto">
+                    <div class="widget widget_nav_menu footer-widget">
+                        <h3 class="widget_title">[ Produkt ]</h3>
+                        <div class="menu-all-pages-container">
+                            <ul class="menu">
+                                <li><a href="/#features-sec">Funkce</a></li>
+                                <li><a href="/cenik">Ceník</a></li>
+                                <li><a href="/blog">Blog</a></li>
+                                <li><a href="https://help.nexiflow.cz">Dokumentace</a></li>
+                                <li><a href="https://app.nexiflow.cz">Přihlásit se</a></li>
+                                <li><a href="https://app.nexiflow.cz">Začít zdarma</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-auto">
+                    <div class="widget widget_nav_menu footer-widget">
+                        <h3 class="widget_title">[ Firma ]</h3>
+                        <div class="menu-all-pages-container">
+                            <ul class="menu">
+                                <li><a href="/o-nas">O nás</a></li>
+                                <li><a href="/changelog">Changelog</a></li>
+                                <li><a href="/#kontakt">Kontakt</a></li>
+                                <li><a href="/obchodni-podminky">Obchodní podmínky</a></li>
+                                <li><a href="/ochrana-osobnich-udaju">Ochrana osobních údajů</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-auto">
+                    <div class="widget widget_nav_menu footer-widget">
+                        <h3 class="widget_title">[ Řešení ]</h3>
+                        <div class="menu-all-pages-container">
+                            <ul class="menu">
+                                <li><a href="/pro-eshopy">Pro e-shopy</a></li>
+                                <li><a href="/pro-zakaznickou-podporu">Zákaznická podpora</a></li>
+                                <li><a href="/nexiflow-vs-smartsupp">NexiFlow vs Smartsupp</a></li>
+                                <li><a href="/nexiflow-vs-tidio">NexiFlow vs Tidio</a></li>
+                                <li><a href="https://help.nexiflow.cz">Nápověda</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright-wrap">
+                <div class="row gy-2 align-items-center justify-content-between">
+                    <p class="copyright-text"><i class="fal fa-copyright"></i> Copyright <a href="https://webui.cz">NexiFlow</a> 2026 – produkt Jindřicha Skalníka. Všechna práva vyhrazena.</p>
+                </div>
+            </div>
+        </div>
     </footer>
 
-    <button type="button" aria-label="Scrollovat nahoru" class="cs_scrollup cs_purple_bg cs_white_color cs_radius_100">
-      <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M0 10L1.7625 11.7625L8.75 4.7875V20H11.25V4.7875L18.225 11.775L20 10L10 0L0 10Z" fill="currentColor"/></svg>
-    </button>
+    <div class="scroll-top">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;"></path>
+        </svg>
+    </div>
 
-    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/circle-progress.js"></script>
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/nice-select.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <script src="assets/js/SplitText.js"></script>
+    <script src="assets/js/DrawSVGPlugin3.min.js"></script>
+    <script src="assets/js/lenis.min.js"></script>
     <script src="assets/js/main.js"></script>
-    <script>document.querySelector('.cs_getting_year').textContent = new Date().getFullYear();</script>
-  </body>
+
+</body>
 </html>

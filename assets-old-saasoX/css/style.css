@@ -6093,7 +6093,7 @@ hr {
   font-style: normal;
   font-weight: 600;
   line-height: 1.21em;
-  text-transform: capitalize;
+  text-transform: none;
 }
 .cs_service_details p {
   font-family: var(--heading-font);
