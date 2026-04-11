@@ -4297,6 +4297,14 @@ hr.title-line {
           align-items: center;
   gap: 24px;
 }
+.footer-top .btn-group {
+  justify-content: flex-start !important;
+  flex-wrap: nowrap !important;
+}
+.footer-logo img {
+  max-height: 166px !important;
+  width: auto;
+}
 .btn-group.style2 {
   gap: 20px 70px;
   /* Small devices */
