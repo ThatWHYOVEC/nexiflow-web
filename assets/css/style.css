@@ -4301,9 +4301,20 @@ hr.title-line {
   justify-content: flex-start !important;
   flex-wrap: nowrap !important;
 }
-.footer-logo img {
-  max-height: 166px !important;
-  width: auto;
+.footer-logo {
+  transform: scale(1.6);
+  transform-origin: left center;
+}
+.footer-top .th-btn2 {
+  white-space: nowrap !important;
+  padding: 15px 30px !important;
+}
+.copyright-wrap {
+  text-align: center;
+}
+.copyright-wrap .copyright-text {
+  width: 100%;
+  text-align: center;
 }
 .btn-group.style2 {
   gap: 20px 70px;
