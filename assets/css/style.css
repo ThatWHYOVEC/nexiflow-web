@@ -4298,7 +4298,7 @@ hr.title-line {
   gap: 24px;
 }
 .footer-top .btn-group {
-  justify-content: flex-start !important;
+  justify-content: flex-end !important;
   flex-wrap: nowrap !important;
 }
 .footer-logo {
@@ -4313,7 +4313,7 @@ hr.title-line {
   white-space: nowrap !important;
 }
 .footer-top .btn-group {
-  justify-content: flex-start !important;
+  justify-content: flex-end !important;
   flex-wrap: nowrap !important;
 }
 .footer-top .th-btn2 {
