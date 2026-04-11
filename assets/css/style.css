@@ -4302,12 +4302,14 @@ hr.title-line {
   flex-wrap: nowrap !important;
 }
 .footer-logo {
-  transform: scale(1.6);
+  transform: scale(2);
   transform-origin: left center;
+}
+.footer-top .box-title {
+  white-space: nowrap !important;
 }
 .footer-top .th-btn2 {
   white-space: nowrap !important;
-  padding: 15px 30px !important;
 }
 .copyright-wrap {
   text-align: center;
