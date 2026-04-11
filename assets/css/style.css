@@ -4311,6 +4311,7 @@ hr.title-line {
 }
 .footer-top .box-title {
   white-space: nowrap !important;
+  text-align: right !important;
 }
 .footer-top .btn-group {
   justify-content: flex-end !important;
