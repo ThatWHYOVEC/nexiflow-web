@@ -4302,18 +4302,19 @@ hr.title-line {
   flex-wrap: nowrap !important;
 }
 .footer-logo {
-  transform: scale(2.2);
+  transform: scale(1.54);
   transform-origin: left center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .footer-top .row {
   align-items: center !important;
 }
-.footer-top .col-lg-6.col-xl-5 {
-  padding-left: 0 !important;
-}
 .footer-top .box-title {
   white-space: nowrap !important;
+}
+.footer-top .btn-group {
+  justify-content: flex-start !important;
+  flex-wrap: nowrap !important;
 }
 .footer-top .th-btn2 {
   white-space: nowrap !important;
