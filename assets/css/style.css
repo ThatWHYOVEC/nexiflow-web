@@ -4302,9 +4302,11 @@ hr.title-line {
   flex-wrap: nowrap !important;
 }
 .footer-logo {
-  transform: scale(1.54);
-  transform-origin: left center;
   margin-bottom: 10px;
+}
+.footer-logo img {
+  max-height: 80px;
+  width: auto;
 }
 .footer-top .row {
   align-items: center !important;
